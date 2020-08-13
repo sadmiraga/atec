@@ -1,0 +1,13 @@
+.productRow {
+  outline: 1px solid black;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+
+.productDiv {
+  outline: 1px solid black;
+  margin-left: 2%;
+  width: 20%;
+}
