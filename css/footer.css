@@ -7,27 +7,26 @@
 .icons {
   text-align: center;
   font-size: 50px;
-  outline: 1px solid black;
-  display: flex;
+  display: block;
 }
 
 .socialMedia {
-  outline: 1px solid black;
   float: left;
-  width: 10%;
-  margin-right: 40%;
+  width: 20%;
+  margin-right: 30%;
+  padding-top: 2%;
 }
 
 .location {
-  outline: 1px solid black;
   float: right;
-  margin-left: 40%;
-  width: 10%;
+  margin-left: 30%;
+  width: 20%;
+  display: block;
 }
 
 #findus {
   font-size: 30px;
-  font-family: comic sans ms;
+  font-family: big caslon;
 }
 
 .sponsorContainer {
@@ -46,4 +45,14 @@
   padding-top: 8%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+#locationIcon {
+  padding-top: 15%;
+
+  font-size: 40px;
+}
+
+.copyright {
+  border-top: 1px solid black;
 }
