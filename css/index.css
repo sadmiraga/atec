@@ -1,13 +1,48 @@
+.content {
+  padding: 20px;
+  flex: 1 0 auto;
+}
+
 .productRow {
-  outline: 1px solid black;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
 }
 
+.productDiv:hover {
+  cursor: pointer;
+}
+
+.productDiv:hover img  {
+  transform: scale(1.2);
+}
+
 .productDiv {
-  outline: 1px solid black;
-  margin-left: 2%;
+  margin: 1%;
   width: 20%;
+  height: 150px;
+  background-color: rgba(238, 238, 238, 0.8);
+  transition: 0.5s;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }

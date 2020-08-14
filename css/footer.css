@@ -1,0 +1,33 @@
+.footer {
+  flex-shrink: 0;
+  background-color: white;
+  padding: 100px;
+}
+
+.icons {
+  text-align: center;
+  font-size: 50px;
+}
+
+#findus {
+  font-size: 30px;
+  font-family: comic sans ms;
+}
+
+.sponsorContainer {
+  display: flex;
+  width: 100%;
+}
+
+.sponsor1 {
+  width: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.sponsor2 {
+  width: 30%;
+  padding-top: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
