@@ -1,0 +1,79 @@
+/* Container holding the image and the text */
+body{
+  font-family: Impact MT;
+}
+.mainImg {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    outline: 1px solid black;
+  }
+  
+  /* Bottom right text */
+  .text-block {   
+    margin: 0 auto;
+    max-width: 700px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+
+  .outer-div-kompressor
+  {
+    background-image: url("../images/kompressor.jpg");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+  }
+
+  .inner-div-kompressor
+{
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top:80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+  
+  .outer-div-elektrostapler
+{
+  background-image: url("../images/Elektrostapler.jpg");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+}
+
+  .outer-div-elektrohochhubwagen
+{
+  background-image: url("../images/Elektro\ Hochhubwagen\ .jpg");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+}
+
+.inner-div-elektrostapler
+{
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top:80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.inner-div-elektrohochhubwagen
+{
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top:80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+h2{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
