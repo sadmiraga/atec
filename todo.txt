@@ -1,1 +1,10 @@
--filter na slikama 
+crucial
+
+
+-about us page 
+-za svaku masinu napravit stranicu 
+-contact page 
+-navbar skupa
+-active slideshow 
+-text over slideshow 
+-ubacit logo na tab 

@@ -1,12 +1,13 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .logo {
   width: 145px;
@@ -16,19 +17,19 @@ body{
   display: flex;
 }
 
-.outer>a {
+.outer > a {
   flex: 1;
   height: 100px;
   line-height: 100px;
   background: #292935;
 }
 
-.outer>a>p {
+.outer > a > p {
   text-decoration: none;
   color: white;
 }
 
-.outer>a .logo {
+.outer > a .logo {
   flex: 1;
 }
 
@@ -36,14 +37,10 @@ p {
   text-align: center;
 }
 
-.navigation-list-item:hover{
+.navigation-list-item:hover {
   background-color: #23222b;
 }
-.navigation-list-item-link:hover{
+.navigation-list-item-link:hover {
   text-decoration: underline;
   text-decoration-color: orange;
-}
-
-body {
-
 }
