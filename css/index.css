@@ -19,16 +19,12 @@
   margin-top: 50px;
 }
 
-#test {
-  height: 100%;
-  width: 100%;
-}
 .slideshow {
   outline: 1px solid black;
-
   height: 1000px;
 }
 
+/* black div */
 .slideshow2 {
   background-color: #252636;
   height: 5000px;
@@ -53,11 +49,8 @@
   margin: 1%;
   width: 20%;
   height: 150px;
-  /*background-color: rgba(238, 238, 238, 0.8);*/
   transition: 0.5s;
   text-align: center;
-
-  /*overflow: hidden;*/
 }
 
 .productDiv:hover {
@@ -80,14 +73,6 @@
 img {
   max-width: 100%;
   max-height: 100%;
-}
-
-body {
-  /*background-image: url("../images/isto.png");*/
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
 }
 
 * {

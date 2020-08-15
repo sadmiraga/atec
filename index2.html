@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+
+    <!-- slideshow-->
+    <link rel="stylesheet" href="css/slideshow.css" type="text/css" />
     <script src="navbar.sticky.js"></script>
   </head>
 
   <body>
+    <!-- slideshow js-->
+
     <header class="header">
       <nav class="navigation">
         <div class="outer">
@@ -40,12 +45,18 @@
       </nav>
     </header>
 
-    <div class="slideshow">
-      <img id="test" src="images/isto.png" alt="missing file" />
+    <br />
+
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
+    <script src="js/slideshow.js"></script>
+
     <div class="content">
-      <h1 style="text-align: center;">Our services</h1>
+      <h1 style="text-align: center;">Miet-Angebot</h1>
 
       <div class="productRow">
         <div class="productDiv">
