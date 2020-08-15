@@ -9,6 +9,8 @@ crucial
 -text over slideshow 
 -ubacit logo na tab 
 -About us page(facebok i mail)
+-navbar se na razlicitim stranicama mijenja 
+
 
 
 MANJE BITNO

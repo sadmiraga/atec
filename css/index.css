@@ -3,7 +3,7 @@
   padding: 20px;
   flex: 1 0 auto;
   font-weight: 300;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .header {
@@ -83,4 +83,3 @@ html,
 body {
   height: 100%;
 }
-
