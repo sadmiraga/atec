@@ -1,6 +1,6 @@
 crucial
 
--Gehhubwagen dodati
+-mobile optimizacija(pregledati sve stranice detaljno)
 -about us page 
 -za svaku masinu napravit stranicu 
 -contact page 
