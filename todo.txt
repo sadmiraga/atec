@@ -1,10 +1,14 @@
 crucial
 
 
--about us page 
 -za svaku masinu napravit stranicu 
 -contact page 
 -navbar skupa
 -active slideshow 
 -text over slideshow 
 -ubacit logo na tab 
+
+
+MANJE BITNO
+-active page text glow 
+-link facebok and email on about us page 
