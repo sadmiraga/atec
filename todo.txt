@@ -8,3 +8,8 @@ crucial
 -active slideshow 
 -text over slideshow 
 -ubacit logo na tab 
+
+
+MANJE BITNO
+-active page text glow 
+-link facebok and email on about us page 
