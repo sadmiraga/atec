@@ -5,7 +5,7 @@ body{
 
   .outer-div-kompressor
   {
-    background-image: url("../images/kompressor.jpg");
+    background-image: url("../images/Machines/kompressor2.png");
     padding: 30px;
     background-color: #f3f3f3;
     height: 80%;
@@ -23,7 +23,7 @@ body{
   
   .outer-div-elektrostapler
 {
-  background-image: url("../images/Elektrostapler.jpg");
+  background-image: url("../images//Machines/Elektrostapler.jpg");
   padding: 30px;
   background-color: #f3f3f3;
   height: 80%;
@@ -32,7 +32,7 @@ body{
   .outer-div-elektrohochhubwagen
 {
   width: auto;
-  background-image: url("../images/Elektro\ Hochhubwagen\ .jpg");
+  background-image: url("../images//Machines/elektrogehhubwagen2.jpg .jpg");
   padding: 30px;
   background-color: #f3f3f3;
   height: 80%;
