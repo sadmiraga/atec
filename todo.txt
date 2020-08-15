@@ -1,12 +1,14 @@
 crucial
 
-
+-Gehhubwagen dodati
+-about us page 
 -za svaku masinu napravit stranicu 
 -contact page 
 -navbar skupa
 -active slideshow 
 -text over slideshow 
 -ubacit logo na tab 
+-About us page(facebok i mail)
 
 
 MANJE BITNO
