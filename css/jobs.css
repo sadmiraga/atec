@@ -1,0 +1,7 @@
+.mail{
+    color: orange;
+}
+
+.mail:hover {
+    text-decoration: underline;
+  }
