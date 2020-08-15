@@ -1,6 +1,6 @@
 crucial
 
--Gehhubwagen
+-Gehhubwagen dodati
 -about us page 
 -za svaku masinu napravit stranicu 
 -contact page 
@@ -8,6 +8,7 @@ crucial
 -active slideshow 
 -text over slideshow 
 -ubacit logo na tab 
+-About us page(facebok i mail)
 
 
 MANJE BITNO
