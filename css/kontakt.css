@@ -8,6 +8,15 @@
   width: 50%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
+
+  text-align: center;
+}
+
+.row {
+  margin-top: 3%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /* Clear floats after the columns */
@@ -22,4 +31,42 @@
   .column {
     width: 100%;
   }
+}
+
+.city {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.kontaktMail {
+  text-decoration: none;
+  color: black;
+}
+
+.fromCurrent {
+  color: orange;
+  text-decoration: none;
+}
+
+.fromCurrent:hover {
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.workingHours {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
+.blackTitle {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
 }
