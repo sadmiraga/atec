@@ -46,7 +46,7 @@ body{
   .outer-div-elektrohochhubwagen
   {
     width: auto;
-    background-image: url("../images/Machines/elektrogehhubwagen2.jpg");
+    background-image: url("../images/Machines/Elektro\ Hochhubwagen2\ .jpg");
     padding: 30px;
     background-color: #f3f3f3;
     height: 80%;
@@ -55,6 +55,153 @@ body{
     background-position: center center;
   }
   .inner-div-elektrohochhubwagen
+  {
+    width: 40%;
+    max-width: 800px;
+    height: 100px;
+    margin-top:80px;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .outer-div-elektrogehhubwagen
+  {
+    width: auto;
+    background-image: url("../images/Machines/elektrogehhubwagen2.jpg");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner-div-elektrogehhubwagen
+  {
+    width: 40%;
+    max-width: 800px;
+    height: 100px;
+    margin-top:80px;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .outer-div-personenlift
+  {
+    width: auto;
+    background-image: url("../images/Machines/personenlift.png");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner-div-personenlift
+  {
+    width: 40%;
+    max-width: 800px;
+    height: 100px;
+    margin-top:80px;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .outer-div-raupenbuhne
+  {
+    width: auto;
+    background-image: url("../images/Machines/raupenbuhnev2.png");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner-div-raupenbuhne
+  {
+    width: 40%;
+    max-width: 800px;
+    height: 100px;
+    margin-top:80px;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .outer-div-scherenbuhne
+  {
+    width: auto;
+    background-image: url("../images/Machines/scherenbruchev2.png");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner-div-scherenbuhne
+  {
+    width: 40%;
+    max-width: 800px;
+    height: 100px;
+    margin-top:80px;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .outer-div-selbstfahrer
+  {
+    width: auto;
+    background-image: url("../images/Machines/selbstfahrerv2.png");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner-div-selbstfahrer
+  {
+    width: 40%;
+    max-width: 800px;
+    height: 100px;
+    margin-top:80px;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .outer-div-teleskopbuhne
+  {
+    width: auto;
+    background-image: url("../images/Machines/teleskopbuhne.jpg");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner-div-teleskopbuhne
+  {
+    width: 40%;
+    max-width: 800px;
+    height: 100px;
+    margin-top:80px;
+    word-wrap: break-word;
+    border-radius: 3px;
+  }
+
+  .outer-div-teleskopstapler
+  {
+    width: auto;
+    background-image: url("../images/Machines/teleskopstapler.png");
+    padding: 30px;
+    background-color: #f3f3f3;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .inner-div-teleskopstapler
   {
     width: 40%;
     max-width: 800px;

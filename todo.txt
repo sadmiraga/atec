@@ -1,11 +1,13 @@
 crucial
 
--Gehhubwagen dodati
+-mobile optimizacija(pregledati sve stranice detaljno)
+-lavrsiti jobs stranicu(Mail link)
+-linkati slike masina sa urlom od masine
 -about us page 
--za svaku masinu napravit stranicu 
 -contact page 
 -navbar skupa
 -active slideshow 
+-Implementrati ATEC u slideshow
 -text over slideshow 
 -ubacit logo na tab 
 -About us page(facebok i mail)
