@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.slider {
+  width: 100%;
+}
+
+.slider-wrapper {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slide {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+  opacity: 1;
+}

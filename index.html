@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
 
     <!-- slideshow-->
-    <link rel="stylesheet" href="css/slideshow.css" type="text/css" />
+
+    <link rel="stylesheet" href="js/test.css" type="text/css" />
+
     <script src="navbar.sticky.js"></script>
   </head>
 
@@ -45,29 +47,28 @@
       </nav>
     </header>
 
-    <div class="slideshow-container">
-      <div style="display: block;" class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="images/slideshow/test.png" style="width: 100%;" />
-        <div class="text">Caption Text</div>
-      </div>
+    <!-- slideshow-->
 
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="images/slideshow/test2.png" style="width: 100%;" />
-        <div class="text">Caption Two</div>
-      </div>
+    <script src="js/slideshow.js"></script>
 
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images/slideshow/3.jpg" style="width: 100%;" />
-        <div class="text">Caption Three</div>
+    <div class="slider" id="main-slider">
+      <div class="company Name">
+        Atec
       </div>
+      <!-- outermost container element -->
+      <div class="slider-wrapper">
+        <!-- innermost wrapper element -->
+        <img
+          src="images/slideshow/beba.png"
+          alt="First"
+          class="slide"
+        /><!-- slides -->
+        <img src="images/slideshow/beba2.png" alt="Second" class="slide" />
+        <img src="images/slideshow/beba3.png" alt="Third" class="slide" />
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <img src="images/slideshow/beba4.png " alt="Third" class="slide" />
+      </div>
     </div>
-    <br />
 
     <div style="text-align: center;">
       <span class="dot" onclick="currentSlide(1)"></span>
