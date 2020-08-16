@@ -42,7 +42,7 @@ p {
   background-color: #23222b;
 }
 .navigation-list-item-link:hover {
-  text-decoration: underline;
+  transition: border-bottom-width 2px 2s;
   text-decoration-color: orange;
 }
 
