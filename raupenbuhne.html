@@ -1,45 +1,102 @@
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+
+<link rel="stylesheet" href="style.css" />
+<!-- jQuery first then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+
 <html>
   <head>
-    <title>Kompressor</title>
+    <title>test</title>
+
+    
 
     <!-- icons source-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <link rel="stylesheet" href="css/machine.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/table.css" type="text/css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="css/machine.css" type="text/css"/>
+    <link rel="stylesheet" href="css/about.css" type="text/css" />
   </head>
 
   <body>
-
-    <header class="header">
-      <nav class="navigation">
-        <div class="outer">
-          <a class="navigation-list-item-link" href="#home"
-            ><p class="navigation-list-item">Home</p></a
-          >
-          <a class="navigation-list-item-link" href="#home"
-            ><p class="navigation-list-item">Home</p></a
-          >
-
-          <p class="navigation-list-item">
-            <img
-              class="logo"
-              id="logo"
-              src="images/logov3.png"
-              onclick="big()"
-            />
-          </p>
-          <a class="navigation-list-item-link" href="#home"
-            ><p class="navigation-list-item">Home</p></a
-          >
-          <a class="navigation-list-item-link" href="#home"
-            ><p class="navigation-list-item">Home</p></a
-          >
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
+        
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+          <span class="menu-icon-bar"></span>
+        </button>
+        
+        <div id="main-nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li><a href="#" class="nav-item nav-link active">Home</a></li>
+            <li><a href="#" class="nav-item nav-link">Über uns</a></li>
+            <li><a href="#" class="nav-item nav-link">Jobs</a></li>
+            <li><a href="#" class="nav-item nav-link">Kontakt</a></li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+
+    <script>
+      jQuery(function($) {
+      $(window).on('scroll', function() {
+		  if ($(this).scrollTop() >= 200) {
+		  	$('.navbar').addClass('fixed-top');
+	  	} else if ($(this).scrollTop() == 0) {
+		  	$('.navbar').removeClass('fixed-top');
+	    	}
+    	});
+    	function adjustNav() {
+	    	var winWidth = $(window).width(),
+		  	dropdown = $('.dropdown'),
+		  	dropdownMenu = $('.dropdown-menu');	
+	    	if (winWidth >= 768) {
+		    	dropdown.on('mouseenter', function() {
+			  	$(this).addClass('show')
+					.children(dropdownMenu).addClass('show');
+			  });
+			
+		  	dropdown.on('mouseleave', function() {
+			  	$(this).removeClass('show')
+					.children(dropdownMenu).removeClass('show');
+			  });
+       } else {
+			dropdown.off('mouseenter mouseleave');
+	  	}
+  	}
+  	$(window).on('resize', adjustNav);
+	  adjustNav();
+    });
+   </script>
+  </header>
 
     <div class="outer-div-raupenbuhne">
         <div class="inner-div-raupenbuhne">

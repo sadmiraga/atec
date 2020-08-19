@@ -5,3 +5,8 @@
 .mail:hover {
     text-decoration: underline;
   }
+
+  body {
+    font-family: 'Avenir Next W01',Arial,sans-serif;
+    height: 100%;
+  }

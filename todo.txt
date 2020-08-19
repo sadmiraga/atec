@@ -11,7 +11,19 @@ crucial
 -text over slideshow 
 -ubacit logo na tab 
 -About us page(facebok i mail)
--navbar se na razlicitim stranicama mijenja 
+-navbar se na razlicitim stranicama mijenja
+-Home button je uvijek activan(narandzast)
+
+/Sloziti tabele po visinima
+/Promjeniti slike u slideshow
+/Urediti ikone
+/Sticky navbar
+/Machines.html zamjeniti sve slike podobne ikonoma
+/Izbaciti jedan image framework/about us
+
+Cpanel
+======
+Rijesiti mail problem na domeni
 
 
 
