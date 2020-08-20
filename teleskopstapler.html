@@ -4,99 +4,85 @@
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
   crossorigin="anonymous"
 />
-
-<link rel="stylesheet" href="style.css" />
 <!-- jQuery first then Bootstrap JS -->
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"
 ></script>
-<script
-  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-  crossorigin="anonymous"
-></script>
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-></script>
+
 
 <html>
   <head>
-    <title>test</title>
-
-    
-
-    <!-- icons source-->
+    <!-- Fontawasome include -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/table.css" type="text/css" />
-    <link rel="stylesheet" href="css/footer.css" type="text/css" />
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/machine.css"type="text/ccs" />
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
-    <link rel="stylesheet" href="css/machine.css" type="text/css"/>
-    <link rel="stylesheet" href="css/about.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
   </head>
 
   <body>
-    <header class="header-area overlay">
-      <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container">
-        <a href="#" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
-        
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-        </button>
-        
-        <div id="main-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li><a href="#" class="nav-item nav-link active">Home</a></li>
-            <li><a href="#" class="nav-item nav-link">Über uns</a></li>
-            <li><a href="#" class="nav-item nav-link">Jobs</a></li>
-            <li><a href="#" class="nav-item nav-link">Kontakt</a></li>
-          </ul>
+    <!-- Navbar-->
+      <header class="header-area overlay">
+        <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <a href="../atec/index.html" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
+          
+          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          </button>
+          
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-li"><a href="../atec/index.html" class="nav-item nav-link ">Home</a></li>
+              <li class="navbar-li"><a href="../atec/about.html" class="nav-item nav-link"> Über uns</a></li>
+              <li class="navbar-li"><a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a></li>
+              <li class="navbar-li"><a href="../atec/kontakt.html" class="nav-item nav-link">Kontakt</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <script>
-      jQuery(function($) {
-      $(window).on('scroll', function() {
-		  if ($(this).scrollTop() >= 200) {
-		  	$('.navbar').addClass('fixed-top');
-	  	} else if ($(this).scrollTop() == 0) {
-		  	$('.navbar').removeClass('fixed-top');
-	    	}
-    	});
-    	function adjustNav() {
-	    	var winWidth = $(window).width(),
-		  	dropdown = $('.dropdown'),
-		  	dropdownMenu = $('.dropdown-menu');	
-	    	if (winWidth >= 768) {
-		    	dropdown.on('mouseenter', function() {
-			  	$(this).addClass('show')
-					.children(dropdownMenu).addClass('show');
-			  });
-			
-		  	dropdown.on('mouseleave', function() {
-			  	$(this).removeClass('show')
-					.children(dropdownMenu).removeClass('show');
-			  });
-       } else {
-			dropdown.off('mouseenter mouseleave');
-	  	}
-  	}
-  	$(window).on('resize', adjustNav);
-	  adjustNav();
+      </nav>
+      <script>
+        jQuery(function($) {
+        $(window).on('scroll', function() {
+        if ($(this).scrollTop() >= 200) {
+          $('.navbar').addClass('fixed-top');
+        } else if ($(this).scrollTop() == 0) {
+          $('.navbar').removeClass('fixed-top');
+        }
+      });
+      
+      function adjustNav() {
+        var winWidth = $(window).width(),
+          dropdown = $('.dropdown'),
+          dropdownMenu = $('.dropdown-menu');
+        
+        if (winWidth >= 768) {
+          dropdown.on('mouseenter', function() {
+            $(this).addClass('show')
+              .children(dropdownMenu).addClass('show');
+          });
+          
+          dropdown.on('mouseleave', function() {
+            $(this).removeClass('show')
+              .children(dropdownMenu).removeClass('show');
+          });
+        } else {
+          dropdown.off('mouseenter mouseleave');
+        }
+      }
+      
+      $(window).on('resize', adjustNav);
+      
+      adjustNav();
     });
-   </script>
-  </header>
+      </script>
+    </header>
 
     <div class="outer-div-teleskopstapler">
       <div class="inner-div-teleskopstapler">
@@ -105,66 +91,51 @@
       </div>
     </div>
 
-    <footer class="flex-col">
-      <div class="info-wrapper flex-row center bg-dark">
-        <div class="wrapper">
-          <div class="footer-info flex-row space-between-start">
-            <div class="info-container flex-row center">
-              <ul>
-                <li>
-                  <h4>Menu</h4>
-                </li>
-                <li>
-                  <a class="text-link" href="../atec/index.html"> Home</a>
-                </li>
-                <li>
-                  <a class="text-link" href="../atec/about.html"> Über uns</a>
-                </li>
-                <li>
-                  <a class="text-link" href="../atec/jobs.html"> Jobs</a>
-                </li>
-                <li>
-                  <a class="text-link" href="../atec/kontakt.html"> Kontakt</a>
-                </li>
-              </ul>
-            </div>
-            <div class="info-container flex-row center">
-              <div class="sponsorContainer">
-                <div class="sponsor1">
-                  <a href="https://www.ipaf.org/en"
-                    ><img src="images/training_ipaf2.png"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="info-container flex-row center">
-              <ul>
-                <li>
-                  <h4>Contact</h4>
-                </li>
-                <li>Thurgauerstrasse 117, 8152 Glattpark(Opfikon)</li>
-                <li>061 922 08 01</li>
-                <li>info(an)atec-ab.ch</li>
-              </ul>
-            </div>
-          </div>
+    <!--Footer-->
+    <div class="footer">
+      <div class="inner-footer">
+    
+    <!--  for company name and description -->
+        <div class="footer-items">
+          <a class="footer-text-logo-link" href="#"><h1 class="footer-text-logo-h1">ATEC <br>Arbeitsbühnen AG</h1></a>
+        </div>
+    
+    <!--  for quick links  -->
+        <div class="footer-items">
+            <ul class="footer-ul">
+              <a class="footer-link" href="../atec/index.html"><li class="footer-li">Home</li></a>
+              <a class="footer-link" href="../atec/about.html"><li class="footer-li">Über uns</li></a>
+              <a class="footer-link" href="../atec/jobs.html"><li class="footer-li">Jobs</li></a>
+              <a class="footer-link" href="../atec/kontakt.html"><li class="footer-li">Kontakt</li></a>
+            </ul>
+        </div>
+    
+    <!--  for some other links -->
+        <div class="footer-items">
+          <a href="https://www.ipaf.org/en"><img src="../atec/images/training_ipaf2.png" height="150px" width="150px"></a>
+        </div>
+    
+    <!--  for contact us info -->
+        <div class="footer-items">
+            <ul class="footer-ul">
+              <li class="footer-li"><i class="fa fa-map-marker" aria-hidden="true"></i>Thurgauerstrasse 117</li>
+              <li class="footer-li"><i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90</li>
+              <li class="footer-li"><i class="fa fa-envelope" aria-hidden="true"></i>info(an)atec-ab.ch</li>
+            </ul> 
+          
+    <!--   for social links -->
+            <div class="social-media">
+              <a href="https://www.facebook.com/nsgroupag.sead"><i class="fab fa-facebook"></i></a>
+              <a href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"><i class="fab fa-linkedin-in"></i></a>
+              <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
+            </div> 
         </div>
       </div>
-      <div class="social-links-container bg-light">
-        <div class="wrapper flex-col center">
-          <div class="social-links flex-row">
-            <div class="social-link">
-              <a href="#"> <i class="fab fa-facebook-f"></i></a>
-            </div>
-            <div class="social-link">
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="copyright-container">
-            <p>Copyright &copy; 2020. All rights reserved</p>
-          </div>
-        </div>
+      
+    <!--   Footer Bottom start  -->
+      <div class="footer-bottom">
+        Copyright &copy; Screnshoot 2020
       </div>
-    </footer>
+    </div>
   </body>
 </html>

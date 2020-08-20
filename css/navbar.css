@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-}
+
+
 .button {
   display: inline-block;
   margin-top: 20px;
@@ -138,7 +139,7 @@
     
   }
 }
-@media screen and (min-width: 767px) {
+@media only screen and (min-width: 767px) {
   .navbar-dark .navbar-nav .nav-link {
     padding: 23px 15px;
   }

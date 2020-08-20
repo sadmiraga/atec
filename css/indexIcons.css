@@ -1,4 +1,5 @@
-.main2 {
+
+  .main2 {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -109,11 +110,6 @@
   }
 }
 
-@media screen and (min-width: 900px) {
-  .container {
-    width: 33.33333%;
-  }
-}
 
 .container .title {
   color: #1a1a1a;
@@ -199,4 +195,6 @@
 
 .fadeIn-bottom {
   top: 80%;
+}
+
 }
