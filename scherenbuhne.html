@@ -26,8 +26,6 @@
   <head>
     <title>test</title>
 
-    
-
     <!-- icons source-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
@@ -38,65 +36,79 @@
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
-    <link rel="stylesheet" href="css/machine.css" type="text/css"/>
+    <link rel="stylesheet" href="css/machine.css" type="text/css" />
     <link rel="stylesheet" href="css/about.css" type="text/css" />
   </head>
 
   <body>
     <header class="header-area overlay">
       <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container">
-        <a href="#" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
-        
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-        </button>
-        
-        <div id="main-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li><a href="#" class="nav-item nav-link active">Home</a></li>
-            <li><a href="#" class="nav-item nav-link">Über uns</a></li>
-            <li><a href="#" class="nav-item nav-link">Jobs</a></li>
-            <li><a href="#" class="nav-item nav-link">Kontakt</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+        <div class="container">
+          <a href="#" class="navbar-brand"
+            ><img
+              src="../atec/images/logoTransparent.png"
+              height="50px"
+              width="50px"
+          /></a>
 
-    <script>
-      jQuery(function($) {
-      $(window).on('scroll', function() {
-		  if ($(this).scrollTop() >= 200) {
-		  	$('.navbar').addClass('fixed-top');
-	  	} else if ($(this).scrollTop() == 0) {
-		  	$('.navbar').removeClass('fixed-top');
-	    	}
-    	});
-    	function adjustNav() {
-	    	var winWidth = $(window).width(),
-		  	dropdown = $('.dropdown'),
-		  	dropdownMenu = $('.dropdown-menu');	
-	    	if (winWidth >= 768) {
-		    	dropdown.on('mouseenter', function() {
-			  	$(this).addClass('show')
-					.children(dropdownMenu).addClass('show');
-			  });
-			
-		  	dropdown.on('mouseleave', function() {
-			  	$(this).removeClass('show')
-					.children(dropdownMenu).removeClass('show');
-			  });
-       } else {
-			dropdown.off('mouseenter mouseleave');
-	  	}
-  	}
-  	$(window).on('resize', adjustNav);
-	  adjustNav();
-    });
-   </script>
-  </header>
+          <button
+            type="button"
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          </button>
+
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li><a href="#" class="nav-item nav-link active">Home</a></li>
+              <li><a href="#" class="nav-item nav-link">Über uns</a></li>
+              <li><a href="#" class="nav-item nav-link">Jobs</a></li>
+              <li><a href="#" class="nav-item nav-link">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <script>
+        jQuery(function ($) {
+          $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+              $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+              $(".navbar").removeClass("fixed-top");
+            }
+          });
+          function adjustNav() {
+            var winWidth = $(window).width(),
+              dropdown = $(".dropdown"),
+              dropdownMenu = $(".dropdown-menu");
+            if (winWidth >= 768) {
+              dropdown.on("mouseenter", function () {
+                $(this)
+                  .addClass("show")
+                  .children(dropdownMenu)
+                  .addClass("show");
+              });
+
+              dropdown.on("mouseleave", function () {
+                $(this)
+                  .removeClass("show")
+                  .children(dropdownMenu)
+                  .removeClass("show");
+              });
+            } else {
+              dropdown.off("mouseenter mouseleave");
+            }
+          }
+          $(window).on("resize", adjustNav);
+          adjustNav();
+        });
+      </script>
+    </header>
 
     <div class="outer-div-scherenbuhne">
       <div class="inner-div-scherenbuhne">
@@ -107,7 +119,7 @@
 
     <!-- table content -->
 
-    <table>
+    <table class="machineTable">
       <thead>
         <tr>
           <th scope="col">Model</th>
@@ -115,21 +127,23 @@
           <th scope="col">Tragkraft</th>
           <th scope="col">Plattformhöhe</th>
           <th scope="col">Eigengewicht</th>
+          <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td
-            class="pdfLink"
-            onclick="location.href='scherenbuhne/430LRT.pdf'"
-            data-label="Model"
-          >
-            430LRT.pdf <i class="fas fa-download"></i>
+          <td data-label="Model">
+            <span class="machineName">
+              scherenbuhne
+            </span>
           </td>
           <td data-label="Arbeitshöhe">15.11m</td>
           <td data-label="Tragkraft">568kg</td>
           <td data-label="Plattformhöhe">13.11m</td>
           <td data-label="Eigengewicht">7155kg</td>
+          <td data-label="Zur detailseite">
+            <button class="btn btn-slide-left">Zur detailseite</button>
+          </td>
         </tr>
 
         <tr>

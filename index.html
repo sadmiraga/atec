@@ -11,7 +11,6 @@
   crossorigin="anonymous"
 ></script>
 
-
 <html>
   <head>
     <!-- Fontawasome include -->
@@ -21,123 +20,336 @@
     <link rel="stylesheet" href="css/slideshow.css" type="text/css" />
     <link rel="stylesheet" href="css/navbar.css" type="text/css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/indexIcons.css" type="text/css" />
   </head>
 
   <body>
     <!-- Navbar-->
-      <header class="header-area overlay">
-        <nav class="navbar navbar-expand-md navbar-dark">
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-          <a href="#" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
-          
-          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+          <a href="#" class="navbar-brand"
+            ><img
+              src="../atec/images/logoTransparent.png"
+              height="50px"
+              width="50px"
+          /></a>
+
+          <button
+            type="button"
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
             <span class="menu-icon-bar"></span>
             <span class="menu-icon-bar"></span>
             <span class="menu-icon-bar"></span>
           </button>
-          
+
           <div id="main-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-              <li class="navbar-li"><a href="../atec/index.html" class="nav-item nav-link ">Home</a></li>
-              <li class="navbar-li"><a href="../atec/about.html" class="nav-item nav-link"> Über uns</a></li>
-              <li class="navbar-li"><a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a></li>
-              <li class="navbar-li"><a href="../atec/kontakt.html" class="nav-item nav-link">Kontakt</a></li>
+              <li class="navbar-li">
+                <a href="../atec/index.html" class="nav-item nav-link">Home</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/about.html" class="nav-item nav-link">
+                  Über uns</a
+                >
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/kontakt.html" class="nav-item nav-link"
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
       <script>
-        jQuery(function($) {
-        $(window).on('scroll', function() {
-        if ($(this).scrollTop() >= 200) {
-          $('.navbar').addClass('fixed-top');
-        } else if ($(this).scrollTop() == 0) {
-          $('.navbar').removeClass('fixed-top');
-        }
-      });
-      
-      function adjustNav() {
-        var winWidth = $(window).width(),
-          dropdown = $('.dropdown'),
-          dropdownMenu = $('.dropdown-menu');
-        
-        if (winWidth >= 768) {
-          dropdown.on('mouseenter', function() {
-            $(this).addClass('show')
-              .children(dropdownMenu).addClass('show');
+        jQuery(function ($) {
+          $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+              $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+              $(".navbar").removeClass("fixed-top");
+            }
           });
-          
-          dropdown.on('mouseleave', function() {
-            $(this).removeClass('show')
-              .children(dropdownMenu).removeClass('show');
-          });
-        } else {
-          dropdown.off('mouseenter mouseleave');
-        }
-      }
-      
-      $(window).on('resize', adjustNav);
-      
-      adjustNav();
-    });
+
+          function adjustNav() {
+            var winWidth = $(window).width(),
+              dropdown = $(".dropdown"),
+              dropdownMenu = $(".dropdown-menu");
+
+            if (winWidth >= 768) {
+              dropdown.on("mouseenter", function () {
+                $(this)
+                  .addClass("show")
+                  .children(dropdownMenu)
+                  .addClass("show");
+              });
+
+              dropdown.on("mouseleave", function () {
+                $(this)
+                  .removeClass("show")
+                  .children(dropdownMenu)
+                  .removeClass("show");
+              });
+            } else {
+              dropdown.off("mouseenter mouseleave");
+            }
+          }
+
+          $(window).on("resize", adjustNav);
+
+          adjustNav();
+        });
       </script>
     </header>
 
     <!--Slideshow-->
     <div class="main">
       <div class="indicator"></div>
-      <div class="slider" >
-              <div class="face face--front">
-          <img class="img" src="../atec/images/slideshow/beba2.png">
+      <div class="slider">
+        <div class="face face--front">
+          <img class="img" src="../atec/images/slideshow/beba2.png" />
           <div class="description">
             <h2 class="title">ATEC angebot</h2>
             <p class="para">Wilkomen</p>
           </div>
-              </div>
-  
-              <div class="face face--right">
-          <img class="img" src="../atec/images/slideshow/slideshow8.jpg">
+        </div>
+
+        <div class="face face--right">
+          <img class="img" src="../atec/images/slideshow/slideshow8.jpg" />
           <div class="description">
             <h2 class="title">SLOW DOWN</h2>
-            <p class="para">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="para">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
-              </div>
-  
-              <div class="face face--back">
-          <img class="img" src="https://github.com/ricardoolivaalonso/recursos/blob/master/slider/1.jpg?raw=true">
+        </div>
+
+        <div class="face face--back">
+          <img
+            class="img"
+            src="https://github.com/ricardoolivaalonso/recursos/blob/master/slider/1.jpg?raw=true"
+          />
           <div class="description">
             <h2 class="title">JUST CHILLING OUT</h2>
-            <p class="para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+            <p class="para">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum.
+            </p>
           </div>
-              </div>
-  
+        </div>
+
         <div class="face face--left">
-          <img class="img" src="https://github.com/ricardoolivaalonso/recursos/blob/master/slider/2.jpg?raw=true">
+          <img
+            class="img"
+            src="https://github.com/ricardoolivaalonso/recursos/blob/master/slider/2.jpg?raw=true"
+          />
           <div class="description">
             <h2 class="title">WORK HARDER</h2>
-            <p class="para">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia.</p>
+            <p class="para">
+              Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+              officia.
+            </p>
           </div>
         </div>
       </div>
-  </div>
+    </div>
 
-  <div>
-    <section class="content">
-      <h1>Miet angebot</h1>
-      <div class="placeholders">
-        <img class="placeholder" src="../atec/icons/Raupenbuhne.png">
-        <img class="placeholder" src="../atec/icons/Scherenbuhne.png">
-        <img class="placeholder" src="../atec/icons/Teleskopbuhne.png">
-        <img class="placeholder" src="../atec/icons/Teleskopstapler.png">
-        <img class="placeholder" src="../atec/icons/Personenlift.png">
-        <img class="placeholder" src="../atec/icons/Kompressor.png">
-        <img class="placeholder" src="../atec/icons/Selbstfahrer.png">
-        <img class="placeholder" src="../atec/icons/Elektro Gehhubwagen.png">
-        <img class="placeholder" src="../atec/icons/Elektro Hochhubwagen.png">
-        <img class="placeholder" src="../atec/icons/Elektrostapler.png">
+    <div>
+      <div class="main2">
+        <h1>Responsive Card Grid Layout</h1>
+        <ul class="cards">
+          <li
+            onclick="location.href='elektrogehhubwagen.html'"
+            class="cards_item"
+          >
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/Elektro Gehhubwagen.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </div>
+              <span class="machineName">Elektro Gehhubwagen</span>
+            </div>
+          </li>
+
+          <li
+            class="cards_item"
+            onclick="location.href='elektrohochhubwagen.html'"
+          >
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/Elektro Hochhubwagen.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </div>
+              <span class="machineName">Elektro Hochhubwagen</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='elektrostapler.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/frontstapler.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Unsere Gabelstapler Vermietung von Hyster helfen Ihnen
+                    schwere Materialien und Werkzeuge mühelos von A nach B
+                    transportieren! Durch Ihren lautlosen Batterie-Antrieb
+                    arbeiten Sie ohne Abgase und sparen Kraftstoff. Die Stapler
+                    eignen sich gleichermassen für den Innen- und Ausseneinsatz
+                    und haben eine tragkraft bis zu 3500kg.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">elektrostapler</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='kompressor.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/kompressor.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">This is a short description</p>
+                </div>
+              </div>
+              <span class="machineName">kompressor</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='personenlift.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img
+                  src="images/products/personenlift.png
+                "
+                />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Mit einer Vertikalmastbühne erledigen Sie Ihre Arbeiten in
+                    der Höhe mit links. Arbeiten Sie ungehindert an, über oder
+                    in der Umgebung von Montagestrassen, Regalen, Kanalsystemen
+                    oder Fächern. Die Vertikalmastbühnen verfügen über dicke,
+                    spurenfreie Gummireifen und einen sauberen effizienten
+                    Elektroantrieb.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">personenlift</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='raupenbuhne.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/raupenbuhne.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Raupen-Arbeitsbühnen erinnern nicht nur optisch an diese
+                    gelenkigen Tiere. Die Stützen gleichen Boden-Unebenheiten
+                    aus und lassen sich sogar am Hang oder an Treppen aufstellen
+                    und bieten Ihnen einen sicheren Stand.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">raupenbuhne</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='scherenbuhne.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/scherenbuhne.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Für Arbeiten in der Höhe, bei denen Sie viel Platz auf der
+                    Plattform benötigen, eignen sich unsere Scherenarbeitsbühnen
+                    perfekt. Mieten Sie die passende Scherenarbeitsbühne für
+                    Ihren Einsatz.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">scherenbuhne</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='selbstfahrer.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/selbsfahrer.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Mieten Sie unkompliziert Ihre LKW-Arbeitsbühne mit einer
+                    Arbeitshöhe von 20 bis 25 m bei uns. Ob für
+                    Baumpflegearbeiten, Glasreinigung oder andere Höhenaufgaben,
+                    finden Sie bei uns die richtige Bühne. Als Selbstfahrer
+                    lassen sich einige Arbeitsbühnen bereits mit einem
+                    Führerschein der Klasse B fahren.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">selbsfahrer</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='teleskopbuhne.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/teleskopbuhne.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Eine grosse Auswahl an selbstfahrenden Teleskop- und
+                    Gelenk-Teleskop-Arbeitsbühnen haben wir für Sie im Angebot.
+                    Bis zu 28m Arbeitshöhe erreichen Sie mit dieser praktischen
+                    Alternative zur LKW-Arbeitsbühne. Diese Bühnen lassen sich
+                    in voller Höhe verfahren und sparen Ihnen damit wertvolle
+                    Zeit.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">teleskopbuhne</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='teleskopstapler.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/teleskostapler.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Teleskopstapler bieten mit hohen Tragkräften, variablen
+                    Reichweiten und einer Vielfalt von Anbaugeräten extrem
+                    vielseitige Einsatzmöglichkeiten. Ein Teleskopstapler eignet
+                    sich bestens dazu, Material aufzuschichten und zu
+                    transportieren.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">teleskostapler</span>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section>
-  </div>
+    </div>
 
     <p>aaaaaaaaaaaaaaaaaaaaaaaa</p>
     <p>aaaaaaaaaaaaaaaaaaaaaaaa</p>
@@ -161,49 +373,75 @@
     <!--Footer-->
     <div class="footer">
       <div class="inner-footer">
-    
-    <!--  for company name and description -->
+        <!--  for company name and description -->
         <div class="footer-items">
-          <a class="footer-text-logo-link" href="#"><h1 class="footer-text-logo-h1">ATEC <br>Arbeitsbühnen AG</h1></a>
+          <a class="footer-text-logo-link" href="#"
+            ><h1 class="footer-text-logo-h1">ATEC <br />Arbeitsbühnen AG</h1></a
+          >
         </div>
-    
-    <!--  for quick links  -->
+
+        <!--  for quick links  -->
         <div class="footer-items">
-            <ul class="footer-ul">
-              <a class="footer-link" href="../atec/index.html"><li class="footer-li">Home</li></a>
-              <a class="footer-link" href="../atec/about.html"><li class="footer-li">Über uns</li></a>
-              <a class="footer-link" href="../atec/jobs.html"><li class="footer-li">Jobs</li></a>
-              <a class="footer-link" href="../atec/kontakt.html"><li class="footer-li">Kontakt</li></a>
-            </ul>
+          <ul class="footer-ul">
+            <a class="footer-link" href="../atec/index.html"
+              ><li class="footer-li">Home</li></a
+            >
+            <a class="footer-link" href="../atec/about.html"
+              ><li class="footer-li">Über uns</li></a
+            >
+            <a class="footer-link" href="../atec/jobs.html"
+              ><li class="footer-li">Jobs</li></a
+            >
+            <a class="footer-link" href="../atec/kontakt.html"
+              ><li class="footer-li">Kontakt</li></a
+            >
+          </ul>
         </div>
-    
-    <!--  for some other links -->
+
+        <!--  for some other links -->
         <div class="footer-items">
-          <a href="https://www.ipaf.org/en"><img src="../atec/images/training_ipaf2.png" height="150px" width="150px"></a>
+          <a href="https://www.ipaf.org/en"
+            ><img
+              src="../atec/images/training_ipaf2.png"
+              height="150px"
+              width="150px"
+          /></a>
         </div>
-    
-    <!--  for contact us info -->
+
+        <!--  for contact us info -->
         <div class="footer-items">
-            <ul class="footer-ul">
-              <li class="footer-li"><i class="fa fa-map-marker" aria-hidden="true"></i>Thurgauerstrasse 117</li>
-              <li class="footer-li"><i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90</li>
-              <li class="footer-li"><i class="fa fa-envelope" aria-hidden="true"></i>info(an)atec-ab.ch</li>
-            </ul> 
-          
-    <!--   for social links -->
-            <div class="social-media">
-              <a href="https://www.facebook.com/nsgroupag.sead"><i class="fab fa-facebook"></i></a>
-              <a href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"><i class="fab fa-linkedin-in"></i></a>
-              <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
-            </div> 
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa fa-map-marker" aria-hidden="true"></i
+              >Thurgauerstrasse 117
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >info(an)atec-ab.ch
+            </li>
+          </ul>
+
+          <!--   for social links -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/nsgroupag.sead"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
       </div>
-      
-    <!--   Footer Bottom start  -->
+
+      <!--   Footer Bottom start  -->
       <div class="footer-bottom">
         Copyright &copy; Screnshoot 2020
       </div>
     </div>
-
   </body>
 </html>
