@@ -1,0 +1,28 @@
+.parallax {
+    /* The image used */
+    background: url("../images/parallaxImg.jpg");
+
+    /* Full height */
+    height: 120px;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-h1{
+    font-size: 30px;
+    position: absolute;
+    color: black;
+    z-index: 500;
+    top: 830px;
+    left: 50%;
+    background-color: rgba(255, 255, 255, .75);
+    box-shadow: 0 1em 2em -1em rgba(0, 0, 0, .5);
+    padding: 1em 2em;
+    line-height: 1.5;
+  }
+

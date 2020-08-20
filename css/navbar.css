@@ -27,7 +27,7 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgb(102, 93, 93);
+  background-color: rgba(255, 255, 255, .75);
   border-radius: 4px;
   opacity: 0;
   -webkit-transform: scaleX(0.8);
@@ -49,9 +49,11 @@ body {
   left: 0px;
   right: 0px;
   top: 0;
-  background-color: #fff;
+  
 }
 .navbar {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
   left: 0;
   top: 0;
@@ -133,6 +135,7 @@ body {
 @media screen and (max-width: 768px) {
   .navbar-brand {
     margin-left: 20px;
+    outline: 20px solid white;
   }
   .navbar-nav {
     padding: 0 20px;
