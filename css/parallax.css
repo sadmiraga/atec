@@ -14,15 +14,19 @@
 }
 
 .parallax-h1{
-    font-size: 30px;
     position: absolute;
-    color: black;
-    z-index: 500;
-    top: 830px;
+    top: 290%;
     left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 99;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
     background-color: rgba(255, 255, 255, .75);
     box-shadow: 0 1em 2em -1em rgba(0, 0, 0, .5);
     padding: 1em 2em;
     line-height: 1.5;
+  }
   }
 
