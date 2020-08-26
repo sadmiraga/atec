@@ -35,61 +35,87 @@
   <body>
     <header class="header-area overlay">
       <nav class="navbar navbar-expand-md navbar-dark">
-      <div class="container">
-        <a href="#" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
-        
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-          <span class="menu-icon-bar"></span>
-        </button>
-        
-        <div id="main-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="navbar-li"><a href="../atec/index.html" class="nav-item nav-link">Home</a></li>
-            <li class="navbar-li"><a href="../atec/about.html" class="nav-item nav-link"> Über uns</a></li>
-            <li class="navbar-li"><a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a></li>
-            <li class="navbar-li"><a href="../atec/kontakt.html" class="nav-item nav-link">Kontakt</a></li>
-          </ul>
+        <div class="container">
+          <a href="#" class="navbar-brand"
+            ><img
+              src="../atec/images/logoTransparent.png"
+              height="50px"
+              width="50px"
+          /></a>
+
+          <button
+            type="button"
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          </button>
+
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-li">
+                <a href="../atec/index.html" class="nav-item nav-link">Home</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/about.html" class="nav-item nav-link">
+                  Über uns</a
+                >
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/kontakt.html" class="nav-item nav-link"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <script>
-      jQuery(function($) {
-      $(window).on('scroll', function() {
-      if ($(this).scrollTop() >= 200) {
-        $('.navbar').addClass('fixed-top');
-      } else if ($(this).scrollTop() == 0) {
-        $('.navbar').removeClass('fixed-top');
-      }
-    });
-    
-    function adjustNav() {
-      var winWidth = $(window).width(),
-        dropdown = $('.dropdown'),
-        dropdownMenu = $('.dropdown-menu');
-      
-      if (winWidth >= 768) {
-        dropdown.on('mouseenter', function() {
-          $(this).addClass('show')
-            .children(dropdownMenu).addClass('show');
+      </nav>
+      <script>
+        jQuery(function ($) {
+          $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+              $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+              $(".navbar").removeClass("fixed-top");
+            }
+          });
+
+          function adjustNav() {
+            var winWidth = $(window).width(),
+              dropdown = $(".dropdown"),
+              dropdownMenu = $(".dropdown-menu");
+
+            if (winWidth >= 768) {
+              dropdown.on("mouseenter", function () {
+                $(this)
+                  .addClass("show")
+                  .children(dropdownMenu)
+                  .addClass("show");
+              });
+
+              dropdown.on("mouseleave", function () {
+                $(this)
+                  .removeClass("show")
+                  .children(dropdownMenu)
+                  .removeClass("show");
+              });
+            } else {
+              dropdown.off("mouseenter mouseleave");
+            }
+          }
+
+          $(window).on("resize", adjustNav);
+
+          adjustNav();
         });
-        
-        dropdown.on('mouseleave', function() {
-          $(this).removeClass('show')
-            .children(dropdownMenu).removeClass('show');
-        });
-      } else {
-        dropdown.off('mouseenter mouseleave');
-      }
-    }
-    
-    $(window).on('resize', adjustNav);
-    
-    adjustNav();
-  });
-    </script>
-  </header>
+      </script>
+    </header>
 
     <br />
     <br />
@@ -163,7 +189,7 @@
         <br />
         <br />
         <br />
-        <hr>
+        <hr />
         <br />
         <br />
         <br />
@@ -183,45 +209,72 @@
 
     <div class="footer">
       <div class="inner-footer">
-    
-    <!--  for company name and description -->
+        <!--  for company name and description -->
         <div class="footer-items">
-          <a class="footer-text-logo-link" href="#"><h1 class="footer-text-logo-h1">ATEC <br>Arbeitsbühnen AG</h1></a>
+          <a class="footer-text-logo-link" href="#"
+            ><h1 class="footer-text-logo-h1">ATEC <br />Arbeitsbühnen AG</h1></a
+          >
         </div>
-    
-    <!--  for quick links  -->
+
+        <!--  for quick links  -->
         <div class="footer-items">
-            <ul class="footer-ul">
-              <a class="footer-link" href="../atec/index.html"><li class="footer-li">Home</li></a>
-              <a class="footer-link" href="../atec/about.html"><li class="footer-li">Über uns</li></a>
-              <a class="footer-link" href="../atec/jobs.html"><li class="footer-li">Jobs</li></a>
-              <a class="footer-link" href="../atec/kontakt.html"><li class="footer-li">Kontakt</li></a>
-            </ul>
+          <ul class="footer-ul">
+            <a class="footer-link" href="../atec/index.html"
+              ><li class="footer-li">Home</li></a
+            >
+            <a class="footer-link" href="../atec/about.html"
+              ><li class="footer-li">Über uns</li></a
+            >
+            <a class="footer-link" href="../atec/jobs.html"
+              ><li class="footer-li">Jobs</li></a
+            >
+            <a class="footer-link" href="../atec/kontakt.html"
+              ><li class="footer-li">Kontakt</li></a
+            >
+          </ul>
         </div>
-    
-    <!--  for some other links -->
+
+        <!--  for some other links -->
         <div class="footer-items">
-          <a href="https://www.ipaf.org/en"><img src="../atec/images/training_ipaf2.png" height="150px" width="150px"></a>
+          <a href="https://www.ipaf.org/en"
+            ><img
+              src="../atec/images/training_ipaf2.png"
+              height="150px"
+              width="150px"
+          /></a>
         </div>
-    
-    <!--  for contact us info -->
+
+        <!--  for contact us info -->
         <div class="footer-items">
-            <ul class="footer-ul">
-              <li class="footer-li"><i class="fa fa-map-marker" aria-hidden="true"></i>Thurgauerstrasse 117</li>
-              <li class="footer-li"><i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90</li>
-              <li class="footer-li"><i class="fa fa-envelope" aria-hidden="true"></i>info(an)atec-ab.ch</li>
-            </ul> 
-          
-    <!--   for social links -->
-            <div class="social-media">
-              <a href="https://www.facebook.com/nsgroupag.sead"><i class="fab fa-facebook"></i></a>
-              <a href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"><i class="fab fa-linkedin-in"></i></a>
-              <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
-            </div> 
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa fa-map-marker" aria-hidden="true"></i
+              >Thurgauerstrasse 117
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >info(an)atec-ab.ch
+            </li>
+          </ul>
+
+          <!--   for social links -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/nsgroupag.sead"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
       </div>
-      
-    <!--   Footer Bottom start  -->
+
+      <!--   Footer Bottom start  -->
       <div class="footer-bottom">
         Copyright &copy; Screnshoot 2020
       </div>

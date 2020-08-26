@@ -36,3 +36,19 @@ MANJE BITNO
 
 info
 ako ti se svidjaju ikone od masina onda cemo ih sredit
+
+
+
+
+-sadmir 
+tabele i slike za svaki produkt 
+
+
+
+velicina slova 
+
+
+
+navbar rijesit na produktima 
+jobs zalijepit footer za  dno 
+atec na footeru rijesit 

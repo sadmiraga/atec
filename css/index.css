@@ -1,9 +1,12 @@
+body {
+  font-family: Fantasy;
+}
+
 .content {
   background-color: white;
   padding: 20px;
   flex: 1 0 auto;
   font-weight: 300;
-  font-family: "Fira Sans", sans-serif;
 }
 
 .header {

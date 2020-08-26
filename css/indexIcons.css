@@ -1,5 +1,4 @@
-
-  .main2 {
+.main2 {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -110,7 +109,6 @@
   }
 }
 
-
 .container .title {
   color: #1a1a1a;
   text-align: center;
@@ -195,6 +193,4 @@
 
 .fadeIn-bottom {
   top: 80%;
-}
-
 }

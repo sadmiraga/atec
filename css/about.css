@@ -75,7 +75,6 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #282828;
-  font-family: "Impact MT";
 }
 .teamy_post {
   margin-top: 0.5em;
@@ -200,7 +199,6 @@
 }
 .section_title {
   font-size: 2.4rem;
-  font-family: "Impact MT";
 }
 .section_title span {
   color: #007efa;
