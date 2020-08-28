@@ -187,8 +187,166 @@
   border-radius: 3px;
 }
 
-h2 {
-  text-align: center;
+.textBx-scherenbuhne {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
   color: white;
-  font-size: 40px;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.scherenbuhne-h1 {
+  color: orange;
+}
+
+.textBx-teleskopstapler {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.teleskopstapler-h1 {
+  color: orange;
+}
+
+.textBx-teleskopbuhne {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.teleskopbuhne-h1 {
+  color: orange;
+}
+
+.textBx-selbstfahrer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.selbstfahrer-h1 {
+  color: orange;
+}
+
+.textBx-raupenbuhne {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.raupenbuhne-h1 {
+  color: orange;
+}
+
+.textBx-personenlift {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.personenlift-h1 {
+  color: orange;
+}
+
+.textBx-kompressor {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.kompressor-h1 {
+  color: orange;
+}
+
+.textBx-elektrostapler {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+  text-align: justify;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.elektrostapler-h1 {
+  color: orange;
+}
+
+.textBx-elektrohochhubwagen {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+  text-align: justify;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.elektrohochhubwagen-h1 {
+  color: orange;
+}
+
+.textBx-elektrogehhubwagen {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+  text-align: justify;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+
+.elektrogehhubwagen-h1 {
+  color: orange;
 }

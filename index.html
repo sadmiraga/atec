@@ -11,13 +11,11 @@
   crossorigin="anonymous"
 ></script>
 
-
 <html>
   <head>
     <!-- Fontawasome include -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/indexIcons.css" type="text/css" />
     <link rel="stylesheet" href="css/index.css" type="text/css" />
@@ -29,76 +27,119 @@
 
   <body>
     <!-- Navbar-->
-      <header class="header-area overlay">
-        <nav class="navbar navbar-expand-md navbar-dark">
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-          <a href="../atec/index.html" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
-          
-          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+          <a href="../atec/index.html" class="navbar-brand"
+            ><img
+              src="../atec/images/logoTransparent.png"
+              height="50px"
+              width="50px"
+          /></a>
+          <p class="navbar-brand-text">ATEC Arbeitsbühnen</p>
+          <button
+            type="button"
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
             <span class="menu-icon-bar"></span>
             <span class="menu-icon-bar"></span>
             <span class="menu-icon-bar"></span>
           </button>
-          
+
           <div id="main-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-              <li class="navbar-li"><a href="../atec/index.html" class="nav-item nav-link ">Home</a></li>
-              <li class="navbar-li"><a href="../atec/about.html" class="nav-item nav-link"> Über uns</a></li>
-              <li class="navbar-li"><a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a></li>
-              <li class="navbar-li"><a href="../atec/kontakt.html" class="nav-item nav-link">Kontakt</a></li>
+              <li class="navbar-li">
+                <a href="../atec/index.html" class="nav-item nav-link">Home</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/about.html" class="nav-item nav-link">
+                  Über uns</a
+                >
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/kontakt.html" class="nav-item nav-link"
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
       <script>
-        jQuery(function($) {
-        $(window).on('scroll', function() {
-        if ($(this).scrollTop() >= 200) {
-          $('.navbar').addClass('fixed-top');
-        } else if ($(this).scrollTop() == 0) {
-          $('.navbar').removeClass('fixed-top');
-        }
-      });
-      
-      function adjustNav() {
-        var winWidth = $(window).width(),
-          dropdown = $('.dropdown'),
-          dropdownMenu = $('.dropdown-menu');
-        
-        if (winWidth >= 768) {
-          dropdown.on('mouseenter', function() {
-            $(this).addClass('show')
-              .children(dropdownMenu).addClass('show');
+        jQuery(function ($) {
+          $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+              $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+              $(".navbar").removeClass("fixed-top");
+            }
           });
-          
-          dropdown.on('mouseleave', function() {
-            $(this).removeClass('show')
-              .children(dropdownMenu).removeClass('show');
-          });
-        } else {
-          dropdown.off('mouseenter mouseleave');
-        }
-      }
-      
-      $(window).on('resize', adjustNav);
-      
-      adjustNav();
-    });
+
+          function adjustNav() {
+            var winWidth = $(window).width(),
+              dropdown = $(".dropdown"),
+              dropdownMenu = $(".dropdown-menu");
+
+            if (winWidth >= 768) {
+              dropdown.on("mouseenter", function () {
+                $(this)
+                  .addClass("show")
+                  .children(dropdownMenu)
+                  .addClass("show");
+              });
+
+              dropdown.on("mouseleave", function () {
+                $(this)
+                  .removeClass("show")
+                  .children(dropdownMenu)
+                  .removeClass("show");
+              });
+            } else {
+              dropdown.off("mouseenter mouseleave");
+            }
+          }
+
+          $(window).on("resize", adjustNav);
+
+          adjustNav();
+        });
       </script>
     </header>
 
     <!-- Slideshow-->
     <div class="slideshow">
-      <h1 class="slideshow-h1"><small class="slideshow-small">Herzlich Willkommen bei der zu</small> ATEC <small class="slideshow-small">Arbeitsbühnen AG</small></h1>
-      <div class="slideshow-image" style="background-image: url('../atec/images/slideshow/slideshow1.jpg')"></div>
-      <div class="slideshow-image" style="background-image: url('../atec/images/slideshow/slideshow2.jpg')"></div>
-      <div class="slideshow-image" style="background-image: url('../atec/images/slideshow/slideshow3.jpg')"></div>
-      <div class="slideshow-image" style="background-image: url('../atec/images/slideshow/slideshow4.jpg')"></div>
+      <h1 class="slideshow-h1">
+        <small class="slideshow-small">Herzlich Willkommen bei der zu</small>
+        ATEC <small class="slideshow-small">Arbeitsbühnen AG</small>
+      </h1>
+      <div
+        class="slideshow-image"
+        style="background-image: url('../atec/images/slideshow/slideshow1.jpg')"
+      ></div>
+      <div
+        class="slideshow-image"
+        style="background-image: url('../atec/images/slideshow/slideshow2.jpg')"
+      ></div>
+      <div
+        class="slideshow-image"
+        style="background-image: url('../atec/images/slideshow/slideshow3.jpg')"
+      ></div>
+      <div
+        class="slideshow-image"
+        style="background-image: url('../atec/images/slideshow/slideshow4.jpg')"
+      ></div>
     </div>
-    
+
+    <!-- Products-->
     <div>
       <div class="main2">
-        <h1>Miet Angebot</h1>
+        <br /><br />
+        <h1 class="index-h1">Miet Angebot</h1>
         <ul class="cards">
           <li
             onclick="location.href='elektrogehhubwagen.html'"
@@ -109,10 +150,14 @@
                 <div class="content-overlay"></div>
                 <img src="images/products/Elektro Gehhubwagen.png" />
                 <div class="content-details fadeIn-bottom">
-                  <p class="content-text">This is a short description</p>
+                  <p class="content-text">
+                    Für das Umstellen von Waren oder Materialien bis zu 2,2t
+                    sind wir mit unseren elektrischen Geh-Hubwagen optimal
+                    gerüstet und können Sie Ihnen zu einem Top-Preis anbieten
+                  </p>
                 </div>
               </div>
-              <span class="machineName">Elektro Gehhubwagen</span>
+              <span class="machineName">Elektro Geh-Hubwagen</span>
             </div>
           </li>
 
@@ -125,10 +170,15 @@
                 <div class="content-overlay"></div>
                 <img src="images/products/Elektro Hochhubwagen.png" />
                 <div class="content-details fadeIn-bottom">
-                  <p class="content-text">This is a short description</p>
+                  <p class="content-text">
+                    Die Elektro-Hochhubwagen eignen sich für die Logistik
+                    masslos und sind sehr einfach zu bedienen. Die Hubhöhe ist
+                    für den Einsatz in einem Vertrieb z.B, oder ein Lager sehr
+                    vorteilhaft.
+                  </p>
                 </div>
               </div>
-              <span class="machineName">Elektro Hochhubwagen</span>
+              <span class="machineName">Elektro-Hochhubwagen</span>
             </div>
           </li>
 
@@ -148,7 +198,7 @@
                   </p>
                 </div>
               </div>
-              <span class="machineName">elektrostapler</span>
+              <span class="machineName">Elektrostapler</span>
             </div>
           </li>
 
@@ -158,10 +208,13 @@
                 <div class="content-overlay"></div>
                 <img src="images/products/kompressor.png" />
                 <div class="content-details fadeIn-bottom">
-                  <p class="content-text">This is a short description</p>
+                  <p class="content-text">
+                    Ob für Baustelle oder den Privatgebrauch, bieten wir Ihnen
+                    Kompressoren an, nach Wunsch oder Vorgaben.
+                  </p>
                 </div>
               </div>
-              <span class="machineName">kompressor</span>
+              <span class="machineName">Kompressoren</span>
             </div>
           </li>
 
@@ -184,7 +237,7 @@
                   </p>
                 </div>
               </div>
-              <span class="machineName">personenlift</span>
+              <span class="machineName">Personenlift</span>
             </div>
           </li>
 
@@ -202,7 +255,7 @@
                   </p>
                 </div>
               </div>
-              <span class="machineName">raupenbuhne</span>
+              <span class="machineName">Raupenarbeitsbühnen</span>
             </div>
           </li>
 
@@ -220,7 +273,7 @@
                   </p>
                 </div>
               </div>
-              <span class="machineName">scherenbuhne</span>
+              <span class="machineName">Scherenbühne</span>
             </div>
           </li>
 
@@ -240,7 +293,7 @@
                   </p>
                 </div>
               </div>
-              <span class="machineName">selbsfahrer</span>
+              <span class="machineName">LKW-Bühne und Selbstfahrer 3.5t</span>
             </div>
           </li>
 
@@ -260,7 +313,7 @@
                   </p>
                 </div>
               </div>
-              <span class="machineName">teleskopbuhne</span>
+              <span class="machineName">Teleskopbühnen</span>
             </div>
           </li>
 
@@ -279,64 +332,97 @@
                   </p>
                 </div>
               </div>
-              <span class="machineName">teleskostapler</span>
+              <span class="machineName">Teleskopstapler</span>
             </div>
           </li>
         </ul>
       </div>
     </div>
-		
-    <br>
-    <br>
-  
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.3721816089765!2d8.555871750469977!3d47.4241857084535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa075504bf00d%3A0xf5ee3ad0304d01b8!2sThurgauerstrasse%20117%2C%208152%20Opfikon%2C%20%C5%A0vicarska!5e0!3m2!1sbs!2ssi!4v1597548897181!5m2!1sbs!2ssi" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    <br />
+    <br />
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.3721816089765!2d8.555871750469977!3d47.4241857084535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa075504bf00d%3A0xf5ee3ad0304d01b8!2sThurgauerstrasse%20117%2C%208152%20Opfikon%2C%20%C5%A0vicarska!5e0!3m2!1sbs!2ssi!4v1597548897181!5m2!1sbs!2ssi"
+      width="100%"
+      height="450"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
 
     <!--Footer-->
     <div class="footer">
       <div class="inner-footer">
-    
-    <!--  for company name and description -->
+        <!--  for company name and description -->
         <div class="footer-items">
-          <a class="footer-text-logo-link" href="#"><h1 class="footer-text-logo-h1">ATEC <br>Arbeitsbühnen AG</h1></a>
+          <a class="footer-text-logo-link" href="#"
+            ><h1 class="footer-text-logo-h1">ATEC <br />Arbeitsbühnen AG</h1></a
+          >
         </div>
-    
-    <!--  for quick links  -->
-        <div class="footer-items">
-            <ul class="footer-ul">
-              <a class="footer-link" href="../atec/index.html"><li class="footer-li">Home</li></a>
-              <a class="footer-link" href="../atec/about.html"><li class="footer-li">Über uns</li></a>
-              <a class="footer-link" href="../atec/jobs.html"><li class="footer-li">Jobs</li></a>
-              <a class="footer-link" href="../atec/kontakt.html"><li class="footer-li">Kontakt</li></a>
-            </ul>
-        </div>
-    
-    <!--  for some other links -->
-        <div class="footer-items">
-          <a href="https://www.ipaf.org/en"><img src="../atec/images/training_ipaf2.png" height="150px" width="150px"></a>
-        </div>
-    
-    <!--  for contact us info -->
-        <div class="footer-items">
-            <ul class="footer-ul">
-              <li class="footer-li"><i class="fa fa-map-marker" aria-hidden="true"></i>Thurgauerstrasse 117</li>
-              <li class="footer-li"><i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90</li>
-              <li class="footer-li"><i class="fa fa-envelope" aria-hidden="true"></i>info(an)atec-ab.ch</li>
-            </ul> 
-          
-    <!--   for social links -->
-            <div class="social-media">
-              <a href="https://www.facebook.com/nsgroupag.sead"><i class="fab fa-facebook"></i></a>
-              <a href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"><i class="fab fa-linkedin-in"></i></a>
-              <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
-            </div> 
-        </div>
-      </div>
-      
-    <!--   Footer Bottom start  -->
-      <div class="footer-bottom">
-        Copyright &copy; Screnshoot 2020
-      </div>
-    </div>
 
+        <!--  for quick links  -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <a class="footer-link" href="../atec/index.html"
+              ><li class="footer-li">Home</li></a
+            >
+            <a class="footer-link" href="../atec/about.html"
+              ><li class="footer-li">Über uns</li></a
+            >
+            <a class="footer-link" href="../atec/jobs.html"
+              ><li class="footer-li">Jobs</li></a
+            >
+            <a class="footer-link" href="../atec/kontakt.html"
+              ><li class="footer-li">Kontakt</li></a
+            >
+          </ul>
+        </div>
+
+        <!--  for some other links -->
+        <div class="footer-items">
+          <a href="https://www.ipaf.org/en"
+            ><img
+              src="../atec/images/training_ipaf2.png"
+              height="150px"
+              width="150px"
+          /></a>
+        </div>
+
+        <!--  for contact us info -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa fa-map-marker" aria-hidden="true"></i
+              >Thurgauerstrasse 117
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >info(an)atec-ab.ch
+            </li>
+          </ul>
+
+          <!--   for social links -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/nsgroupag.sead"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!--   Footer Bottom start  -->
+      <div class="footer-bottom">Copyright &copy; Screnshoot 2020</div>
+    </div>
   </body>
 </html>

@@ -77,3 +77,7 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.index-h1 {
+  ccolor: rgb(156, 156, 156);
+}

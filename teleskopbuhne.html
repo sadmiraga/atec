@@ -4,138 +4,531 @@
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
   crossorigin="anonymous"
 />
+
+<link rel="stylesheet" href="style.css" />
 <!-- jQuery first then Bootstrap JS -->
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"
 ></script>
-
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
 
 <html>
   <head>
-    <!-- Fontawasome include -->
+    <title>ATEC</title>
+
+    <link
+      rel="icon"
+      href="images/assets/hnet.com-image.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <!-- icons source-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet" href="css/machine.css"type="text/ccs" />
-    <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/table.css" type="text/css" />
     <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="css/machine.css" type="text/css" />
+    <link rel="stylesheet" href="css/about.css" type="text/css" />
   </head>
 
   <body>
-    <!-- Navbar-->
-      <header class="header-area overlay">
-        <nav class="navbar navbar-expand-md navbar-dark">
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-          <a href="../atec/index.html" class="navbar-brand"><img src="../atec/images/logoTransparent.png" height="50px" width="50px"></a>
-          
-          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+          <a href="../atec/index.html" class="navbar-brand"
+            ><img
+              src="../atec/images/logoTransparent.png"
+              height="50px"
+              width="50px"
+          /></a>
+          <p class="navbar-brand-text">ATEC Arbeitsbühnen</p>
+          <button
+            type="button"
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
             <span class="menu-icon-bar"></span>
             <span class="menu-icon-bar"></span>
             <span class="menu-icon-bar"></span>
           </button>
-          
+
           <div id="main-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-              <li class="navbar-li"><a href="../atec/index.html" class="nav-item nav-link ">Home</a></li>
-              <li class="navbar-li"><a href="../atec/about.html" class="nav-item nav-link"> Über uns</a></li>
-              <li class="navbar-li"><a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a></li>
-              <li class="navbar-li"><a href="../atec/kontakt.html" class="nav-item nav-link">Kontakt</a></li>
+              <li class="navbar-li">
+                <a href="../atec/index.html" class="nav-item nav-link">Home</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/about.html" class="nav-item nav-link">
+                  Über uns</a
+                >
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/kontakt.html" class="nav-item nav-link"
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
       <script>
-        jQuery(function($) {
-        $(window).on('scroll', function() {
-        if ($(this).scrollTop() >= 200) {
-          $('.navbar').addClass('fixed-top');
-        } else if ($(this).scrollTop() == 0) {
-          $('.navbar').removeClass('fixed-top');
-        }
-      });
-      
-      function adjustNav() {
-        var winWidth = $(window).width(),
-          dropdown = $('.dropdown'),
-          dropdownMenu = $('.dropdown-menu');
-        
-        if (winWidth >= 768) {
-          dropdown.on('mouseenter', function() {
-            $(this).addClass('show')
-              .children(dropdownMenu).addClass('show');
+        jQuery(function ($) {
+          $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+              $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+              $(".navbar").removeClass("fixed-top");
+            }
           });
-          
-          dropdown.on('mouseleave', function() {
-            $(this).removeClass('show')
-              .children(dropdownMenu).removeClass('show');
-          });
-        } else {
-          dropdown.off('mouseenter mouseleave');
-        }
-      }
-      
-      $(window).on('resize', adjustNav);
-      
-      adjustNav();
-    });
+
+          function adjustNav() {
+            var winWidth = $(window).width(),
+              dropdown = $(".dropdown"),
+              dropdownMenu = $(".dropdown-menu");
+
+            if (winWidth >= 768) {
+              dropdown.on("mouseenter", function () {
+                $(this)
+                  .addClass("show")
+                  .children(dropdownMenu)
+                  .addClass("show");
+              });
+
+              dropdown.on("mouseleave", function () {
+                $(this)
+                  .removeClass("show")
+                  .children(dropdownMenu)
+                  .removeClass("show");
+              });
+            } else {
+              dropdown.off("mouseenter mouseleave");
+            }
+          }
+
+          $(window).on("resize", adjustNav);
+
+          adjustNav();
+        });
       </script>
     </header>
 
-    <div class="outer-div-teleskopstapler">
-      <div class="inner-div-teleskopstapler">
+    <div class="outer-div-teleskopbuhne">
+      <div class="inner-div-teleskopbuhne">
         <br />
-        <h2>TELESKOPSTAPLER</h2>
+        <div class="textBx-teleskopbuhne">
+          <h1 class="teleskopbuhne-h1">Teleskopbühnen</h1>
+          <p class="teleskopbuhne-p">
+            Eine grosse Auswahl an selbstfahrenden Teleskop- und
+            Gelenk-Teleskop<br />-Arbeitsbühnen haben wir für Sie im Angebot.
+            Bis zu 28m Arbeitshöhe <br />erreichen Sie mit dieser praktischen
+            Alternative zur LKW-Arbeitsbühne. <br />Diese Bühnen lassen sich in
+            voller Höhe verfahren und sparen Ihnen damit wertvolle Zeit.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!--Footer-->
+    <!-- table content -->
+
+    <table class="machineTable">
+      <thead>
+        <tr>
+          <th scope="col">Model</th>
+          <th scope="col">Arbeitshöhe</th>
+          <th scope="col">Tragkraft</th>
+          <th scope="col">Plattformhöhe</th>
+          <th scope="col">Eigengewicht</th>
+          <th scope="col">PDF</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="machineName" data-label="Model">1230ES</td>
+          <td data-label="Arbeitshöhe">5.66m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">3.66m</td>
+          <td data-label="Eigengewicht">790kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/1230ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">ES1530L_GE</td>
+          <td data-label="Arbeitshöhe">6.40m</td>
+          <td data-label="Tragkraft">227kg</td>
+          <td data-label="Plattformhöhe">4.50m</td>
+          <td data-label="Eigengewicht">880kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/ES1530L_GE.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2032ES-1</td>
+          <td data-label="Arbeitshöhe">7.72m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">5.72m</td>
+          <td data-label="Eigengewicht">1565kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2032ES-1.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">1932R</td>
+          <td data-label="Arbeitshöhe">7.80m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">5.80m</td>
+          <td data-label="Eigengewicht">1565kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/1932R.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2030ES</td>
+          <td data-label="Arbeitshöhe">8.00m</td>
+          <td data-label="Tragkraft">360kg</td>
+          <td data-label="Plattformhöhe">6.10m</td>
+          <td data-label="Eigengewicht">2065kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2030ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2032ES</td>
+          <td data-label="Arbeitshöhe">8.10m</td>
+          <td data-label="Tragkraft">360kg</td>
+          <td data-label="Plattformhöhe">6.10m</td>
+          <td data-label="Eigengewicht">1970kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2032ES-1.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2632ES</td>
+          <td data-label="Arbeitshöhe">9.77m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">7.77m</td>
+          <td data-label="Eigengewicht">2135kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2632ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2646ES</td>
+          <td data-label="Arbeitshöhe">9.92m</td>
+          <td data-label="Tragkraft">450kg</td>
+          <td data-label="Plattformhöhe">7.92m</td>
+          <td data-label="Eigengewicht">2740kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2646ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">SL-26</td>
+          <td data-label="Arbeitshöhe">10.00m</td>
+          <td data-label="Tragkraft">680kg</td>
+          <td data-label="Plattformhöhe">8.00m</td>
+          <td data-label="Eigengewicht">3500kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">SL30_Datenblatt</td>
+          <td data-label="Arbeitshöhe">11.00m</td>
+          <td data-label="Tragkraft">590kg</td>
+          <td data-label="Plattformhöhe">9.00m</td>
+          <td data-label="Eigengewicht">3400kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/SL30_Datenblatt.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">3246ES</td>
+          <td data-label="Arbeitshöhe">11.68m</td>
+          <td data-label="Tragkraft">320kg</td>
+          <td data-label="Plattformhöhe">9.68m</td>
+          <td data-label="Eigengewicht">2905kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/3246ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">4045R</td>
+          <td data-label="Arbeitshöhe">13.96m</td>
+          <td data-label="Tragkraft">350kg</td>
+          <td data-label="Plattformhöhe">11.96m</td>
+          <td data-label="Eigengewicht">3175kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/4045R.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">430LRT (D)</td>
+          <td data-label="Arbeitshöhe">15.11m</td>
+          <td data-label="Tragkraft">568kg</td>
+          <td data-label="Plattformhöhe">13.11m</td>
+          <td data-label="Eigengewicht">7155kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 160 E20</td>
+          <td data-label="Arbeitshöhe">15.70m</td>
+          <td data-label="Tragkraft">750kg</td>
+          <td data-label="Plattformhöhe">13.70m</td>
+          <td data-label="Eigengewicht">7760kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/HL 160 E20 und HL 190 E20.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 160 E12</td>
+          <td data-label="Arbeitshöhe">16.00m</td>
+          <td data-label="Tragkraft">750kg</td>
+          <td data-label="Plattformhöhe">14.00m</td>
+          <td data-label="Eigengewicht">7550kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/HL 160 E12.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">530LRT</td>
+          <td data-label="Arbeitshöhe">18.15m</td>
+          <td data-label="Tragkraft">680kg</td>
+          <td data-label="Plattformhöhe">16.15m</td>
+          <td data-label="Eigengewicht">7995kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/530LRT.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 190 E20</td>
+          <td data-label="Arbeitshöhe">18.60m</td>
+          <td data-label="Tragkraft">550kg</td>
+          <td data-label="Plattformhöhe">16.60m</td>
+          <td data-label="Eigengewicht">8660kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 190 E12</td>
+          <td data-label="Arbeitshöhe">18.80m</td>
+          <td data-label="Tragkraft">500kg</td>
+          <td data-label="Plattformhöhe">16.80m</td>
+          <td data-label="Eigengewicht">7985kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 220 E12</td>
+          <td data-label="Arbeitshöhe">21.50m</td>
+          <td data-label="Tragkraft">500kg</td>
+          <td data-label="Plattformhöhe">19.50m</td>
+          <td data-label="Eigengewicht">9800kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 280 und HL 330</td>
+          <td data-label="Arbeitshöhe">28.20m</td>
+          <td data-label="Tragkraft">750kg</td>
+          <td data-label="Plattformhöhe">26.20m</td>
+          <td data-label="Eigengewicht">18770kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/HL 280 und HL 330.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 330 E14</td>
+          <td data-label="Arbeitshöhe">33.00m</td>
+          <td data-label="Tragkraft">600kg</td>
+          <td data-label="Plattformhöhe">31.00m</td>
+          <td data-label="Eigengewicht">23950kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
     <div class="footer">
       <div class="inner-footer">
-    
-    <!--  for company name and description -->
+        <!--  for company name and description -->
         <div class="footer-items">
-          <a class="footer-text-logo-link" href="#"><h1 class="footer-text-logo-h1">ATEC <br>Arbeitsbühnen AG</h1></a>
+          <a class="footer-text-logo-link" href="#"
+            ><h1 class="footer-text-logo-h1">ATEC <br />Arbeitsbühnen AG</h1></a
+          >
         </div>
-    
-    <!--  for quick links  -->
+
+        <!--  for quick links  -->
         <div class="footer-items">
-            <ul class="footer-ul">
-              <a class="footer-link" href="../atec/index.html"><li class="footer-li">Home</li></a>
-              <a class="footer-link" href="../atec/about.html"><li class="footer-li">Über uns</li></a>
-              <a class="footer-link" href="../atec/jobs.html"><li class="footer-li">Jobs</li></a>
-              <a class="footer-link" href="../atec/kontakt.html"><li class="footer-li">Kontakt</li></a>
-            </ul>
+          <ul class="footer-ul">
+            <a class="footer-link" href="../atec/index.html"
+              ><li class="footer-li">Home</li></a
+            >
+            <a class="footer-link" href="../atec/about.html"
+              ><li class="footer-li">Über uns</li></a
+            >
+            <a class="footer-link" href="../atec/jobs.html"
+              ><li class="footer-li">Jobs</li></a
+            >
+            <a class="footer-link" href="../atec/kontakt.html"
+              ><li class="footer-li">Kontakt</li></a
+            >
+          </ul>
         </div>
-    
-    <!--  for some other links -->
+
+        <!--  for some other links -->
         <div class="footer-items">
-          <a href="https://www.ipaf.org/en"><img src="../atec/images/training_ipaf2.png" height="150px" width="150px"></a>
+          <a href="https://www.ipaf.org/en"
+            ><img
+              src="../atec/images/training_ipaf2.png"
+              height="150px"
+              width="150px"
+          /></a>
         </div>
-    
-    <!--  for contact us info -->
+
+        <!--  for contact us info -->
         <div class="footer-items">
-            <ul class="footer-ul">
-              <li class="footer-li"><i class="fa fa-map-marker" aria-hidden="true"></i>Thurgauerstrasse 117</li>
-              <li class="footer-li"><i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90</li>
-              <li class="footer-li"><i class="fa fa-envelope" aria-hidden="true"></i>info(an)atec-ab.ch</li>
-            </ul> 
-          
-    <!--   for social links -->
-            <div class="social-media">
-              <a href="https://www.facebook.com/nsgroupag.sead"><i class="fab fa-facebook"></i></a>
-              <a href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"><i class="fab fa-linkedin-in"></i></a>
-              <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
-            </div> 
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa fa-map-marker" aria-hidden="true"></i
+              >Thurgauerstrasse 117
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >info(an)atec-ab.ch
+            </li>
+          </ul>
+
+          <!--   for social links -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/nsgroupag.sead"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
       </div>
-      
-    <!--   Footer Bottom start  -->
-      <div class="footer-bottom">
-        Copyright &copy; Screnshoot 2020
-      </div>
+
+      <!--   Footer Bottom start  -->
+      <div class="footer-bottom">Copyright &copy; Screnshoot 2020</div>
     </div>
   </body>
 </html>

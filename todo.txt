@@ -1,54 +1,27 @@
-crucial
-
--mobile optimizacija(pregledati sve stranice detaljno)
--lavrsiti jobs stranicu(Mail link)
--linkati slike masina sa urlom od masine
--about us page 
--contact page 
--navbar skupa
--active slideshow 
--Implementrati ATEC u slideshow
--text over slideshow 
--ubacit logo na tab 
--About us page(facebok i mail)
--navbar se na razlicitim stranicama mijenja
--Home button je uvijek activan(narandzast)
-
-/Sloziti tabele po visinima
-/Promjeniti slike u slideshow
-/Urediti ikone
-/Sticky navbar
-/Machines.html zamjeniti sve slike podobne ikonoma
-/Izbaciti jedan image framework/about us
-
 Cpanel
 ======
 Rijesiti mail problem na domeni
+======
+
+-Tebale zavrsiti
+-Redoslijed produkata:
+	1. Scherenbühne
+	2. LKW-Bühne und Selbstfahrer 3.5t
+	3. Teleskopbühnen
+	4. Raupenarbeitsbühnen
+	5. Teleskopstapler
+	6. Personenlift
+	7. Elektrostapler
+	8. Elektro-Hochhubwagen
+	9. Elektro Geh-Hubwagen
+	10. Kompressoren
+
+-Pregledati svaku stranicu da li je font odgovarajuci
+-Ubaciti logo na index page(Onaj mali gore na tabu)
+-Dodati liniju kao sa Uber uns na jobs
+-Rijesiti spori load index page-a
 
 
-
-MANJE BITNO
--active page text glow 
--link facebok and email on about us page 
-
-
-
-
-info
-ako ti se svidjaju ikone od masina onda cemo ih sredit
-
-
-
-
--sadmir 
-tabele i slike za svaki produkt 
-
-
-
-velicina slova 
-
-
-
-navbar rijesit na produktima 
-jobs zalijepit footer za  dno 
-atec na footeru rijesit 
+*****************************************
+-U svakom slucaju staviti stranicu live *
+*****************************************

@@ -24,7 +24,14 @@
 
 <html>
   <head>
-    <title>test</title>
+    <title>ATEC</title>
+
+    <link
+      rel="icon"
+      href="images/assets/hnet.com-image.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
 
     <!-- icons source-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -44,13 +51,13 @@
     <header class="header-area overlay">
       <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
-          <a href="#" class="navbar-brand"
+          <a href="../atec/index.html" class="navbar-brand"
             ><img
               src="../atec/images/logoTransparent.png"
               height="50px"
               width="50px"
           /></a>
-
+          <p class="navbar-brand-text">ATEC Arbeitsbühnen</p>
           <button
             type="button"
             class="navbar-toggler collapsed"
@@ -64,15 +71,26 @@
 
           <div id="main-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
-              <li><a href="#" class="nav-item nav-link active">Home</a></li>
-              <li><a href="#" class="nav-item nav-link">Über uns</a></li>
-              <li><a href="#" class="nav-item nav-link">Jobs</a></li>
-              <li><a href="#" class="nav-item nav-link">Kontakt</a></li>
+              <li class="navbar-li">
+                <a href="../atec/index.html" class="nav-item nav-link">Home</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/about.html" class="nav-item nav-link">
+                  Über uns</a
+                >
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/jobs.html" class="nav-item nav-link">Jobs</a>
+              </li>
+              <li class="navbar-li">
+                <a href="../atec/kontakt.html" class="nav-item nav-link"
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-
       <script>
         jQuery(function ($) {
           $(window).on("scroll", function () {
@@ -82,10 +100,12 @@
               $(".navbar").removeClass("fixed-top");
             }
           });
+
           function adjustNav() {
             var winWidth = $(window).width(),
               dropdown = $(".dropdown"),
               dropdownMenu = $(".dropdown-menu");
+
             if (winWidth >= 768) {
               dropdown.on("mouseenter", function () {
                 $(this)
@@ -104,7 +124,9 @@
               dropdown.off("mouseenter mouseleave");
             }
           }
+
           $(window).on("resize", adjustNav);
+
           adjustNav();
         });
       </script>
@@ -113,7 +135,15 @@
     <div class="outer-div-scherenbuhne">
       <div class="inner-div-scherenbuhne">
         <br />
-        <h2>SCHERENBUHNE</h2>
+        <div class="textBx-scherenbuhne">
+          <h1 class="scherenbuhne-h1">Scherenbühne</h1>
+          <p class="scherenbuhne-p">
+            <br />Für Arbeiten in der Höhe, bei denen Sie viel Platz auf der
+            Plattform benötigen, <br />eignen sich unsere Scherenarbeitsbühnen
+            perfekt. <br />Mieten Sie die passende Scherenarbeitsbühne für Ihren
+            Einsatz.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -132,111 +162,39 @@
       </thead>
       <tbody>
         <tr>
-          <td class="machineName" data-label="Model">
-            HL 280 und HL 330
-          </td>
-          <td data-label="Arbeitshöhe">28.20m</td>
-          <td data-label="Tragkraft">750kg</td>
-          <td data-label="Plattformhöhe">26.20m</td>
-          <td data-label="Eigengewicht">18770kg</td>
-          <td data-label="Zur detailseite">
-            <button
-              onclick="location.href='scherenbuhne/HL 280 und HL 330.pdf'"
-              class="btn btn-slide-left"
-            >
-              Zur detailseite
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="machineName" data-label="Model">
-            530LRT
-          </td>
-          <td data-label="Arbeitshöhe">18.15m</td>
-          <td data-label="Tragkraft">680kg</td>
-          <td data-label="Plattformhöhe">16.15m</td>
-          <td data-label="Eigengewicht">7995kg</td>
-          <td data-label="Zur detailseite">
-            <button
-              onclick="location.href='scherenbuhne/530LRT.pdf'"
-              class="btn btn-slide-left"
-            >
-              Zur detailseite
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="machineName" data-label="Model">
-            HL 160 E12
-          </td>
-          <td data-label="Arbeitshöhe">16.00m</td>
-          <td data-label="Tragkraft">750kg</td>
-          <td data-label="Plattformhöhe">14.00m</td>
-          <td data-label="Eigengewicht">7550kg</td>
-          <td data-label="Zur detailseite">
-            <button
-              onclick="location.href='scherenbuhne/HL 160 E12.pdf'"
-              class="btn btn-slide-left"
-            >
-              Zur detailseite
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="machineName" data-label="Model">
-            scherenbuhne
-          </td>
-          <td data-label="Arbeitshöhe">15.11m</td>
-          <td data-label="Tragkraft">568kg</td>
-          <td data-label="Plattformhöhe">13.11m</td>
-          <td data-label="Eigengewicht">7155kg</td>
-          <td data-label="Zur detailseite">
-            <button class="btn btn-slide-left">Zur detailseite</button>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="machineName" data-label="Model">
-            SL30_Datenblatt
-          </td>
-          <td data-label="Arbeitshöhe">11.00m</td>
-          <td data-label="Tragkraft">590kg</td>
-          <td data-label="Plattformhöhe">9.00m</td>
-          <td data-label="Eigengewicht">3400kg</td>
-          <td data-label="Zur detailseite">
-            <button
-              onclick="location.href='scherenbuhne/SL30_Datenblatt.pdf'"
-              class="btn btn-slide-left"
-            >
-              Zur detailseite
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="machineName" data-label="Model">
-            1932R
-          </td>
-          <td data-label="Arbeitshöhe">7.80m</td>
+          <td class="machineName" data-label="Model">1230ES</td>
+          <td data-label="Arbeitshöhe">5.66m</td>
           <td data-label="Tragkraft">230kg</td>
-          <td data-label="Plattformhöhe">5.80m</td>
-          <td data-label="Eigengewicht">1565kg</td>
+          <td data-label="Plattformhöhe">3.66m</td>
+          <td data-label="Eigengewicht">790kg</td>
           <td data-label="Zur detailseite">
             <button
-              onclick="location.href='scherenbuhne/1932R.pdf'"
+              onclick="location.href='scherenbuhne/1230ES.pdf'"
               class="btn btn-slide-left"
             >
               Zur detailseite
             </button>
           </td>
         </tr>
+
         <tr>
-          <td class="machineName" data-label="Model">
-            2032ES-1
+          <td class="machineName" data-label="Model">ES1530L_GE</td>
+          <td data-label="Arbeitshöhe">6.40m</td>
+          <td data-label="Tragkraft">227kg</td>
+          <td data-label="Plattformhöhe">4.50m</td>
+          <td data-label="Eigengewicht">880kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/ES1530L_GE.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
           </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2032ES-1</td>
           <td data-label="Arbeitshöhe">7.72m</td>
           <td data-label="Tragkraft">230kg</td>
           <td data-label="Plattformhöhe">5.72m</td>
@@ -252,87 +210,324 @@
         </tr>
 
         <tr>
-          <td class="machineName" data-label="Model">
-            ES1530L_GE
-          </td>
-          <td data-label="Arbeitshöhe">6.40m</td>
-          <td data-label="Tragkraft">227kg</td>
-          <td data-label="Plattformhöhe">4.50m</td>
-          <td data-label="Eigengewicht">880kg</td>
+          <td class="machineName" data-label="Model">1932R</td>
+          <td data-label="Arbeitshöhe">7.80m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">5.80m</td>
+          <td data-label="Eigengewicht">1565kg</td>
           <td data-label="Zur detailseite">
             <button
-              onclick="location.href='scherenbuhne/ES1530L_GE.pdf'"
+              onclick="location.href='scherenbuhne/1932R.pdf'"
               class="btn btn-slide-left"
             >
               Zur detailseite
             </button>
           </td>
         </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2030ES</td>
+          <td data-label="Arbeitshöhe">8.00m</td>
+          <td data-label="Tragkraft">360kg</td>
+          <td data-label="Plattformhöhe">6.10m</td>
+          <td data-label="Eigengewicht">2065kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2030ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2032ES</td>
+          <td data-label="Arbeitshöhe">8.10m</td>
+          <td data-label="Tragkraft">360kg</td>
+          <td data-label="Plattformhöhe">6.10m</td>
+          <td data-label="Eigengewicht">1970kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2032ES-1.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2632ES</td>
+          <td data-label="Arbeitshöhe">9.77m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">7.77m</td>
+          <td data-label="Eigengewicht">2135kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2632ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">2646ES</td>
+          <td data-label="Arbeitshöhe">9.92m</td>
+          <td data-label="Tragkraft">450kg</td>
+          <td data-label="Plattformhöhe">7.92m</td>
+          <td data-label="Eigengewicht">2740kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/2646ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">SL-26</td>
+          <td data-label="Arbeitshöhe">10.00m</td>
+          <td data-label="Tragkraft">680kg</td>
+          <td data-label="Plattformhöhe">8.00m</td>
+          <td data-label="Eigengewicht">3500kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">SL30_Datenblatt</td>
+          <td data-label="Arbeitshöhe">11.00m</td>
+          <td data-label="Tragkraft">590kg</td>
+          <td data-label="Plattformhöhe">9.00m</td>
+          <td data-label="Eigengewicht">3400kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/SL30_Datenblatt.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">3246ES</td>
+          <td data-label="Arbeitshöhe">11.68m</td>
+          <td data-label="Tragkraft">320kg</td>
+          <td data-label="Plattformhöhe">9.68m</td>
+          <td data-label="Eigengewicht">2905kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/3246ES.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">4045R</td>
+          <td data-label="Arbeitshöhe">13.96m</td>
+          <td data-label="Tragkraft">350kg</td>
+          <td data-label="Plattformhöhe">11.96m</td>
+          <td data-label="Eigengewicht">3175kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/4045R.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">430LRT (D)</td>
+          <td data-label="Arbeitshöhe">15.11m</td>
+          <td data-label="Tragkraft">568kg</td>
+          <td data-label="Plattformhöhe">13.11m</td>
+          <td data-label="Eigengewicht">7155kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 160 E20</td>
+          <td data-label="Arbeitshöhe">15.70m</td>
+          <td data-label="Tragkraft">750kg</td>
+          <td data-label="Plattformhöhe">13.70m</td>
+          <td data-label="Eigengewicht">7760kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/HL 160 E20 und HL 190 E20.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 160 E12</td>
+          <td data-label="Arbeitshöhe">16.00m</td>
+          <td data-label="Tragkraft">750kg</td>
+          <td data-label="Plattformhöhe">14.00m</td>
+          <td data-label="Eigengewicht">7550kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/HL 160 E12.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">530LRT</td>
+          <td data-label="Arbeitshöhe">18.15m</td>
+          <td data-label="Tragkraft">680kg</td>
+          <td data-label="Plattformhöhe">16.15m</td>
+          <td data-label="Eigengewicht">7995kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/530LRT.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 190 E20</td>
+          <td data-label="Arbeitshöhe">18.60m</td>
+          <td data-label="Tragkraft">550kg</td>
+          <td data-label="Plattformhöhe">16.60m</td>
+          <td data-label="Eigengewicht">8660kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 190 E12</td>
+          <td data-label="Arbeitshöhe">18.80m</td>
+          <td data-label="Tragkraft">500kg</td>
+          <td data-label="Plattformhöhe">16.80m</td>
+          <td data-label="Eigengewicht">7985kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 220 E12</td>
+          <td data-label="Arbeitshöhe">21.50m</td>
+          <td data-label="Tragkraft">500kg</td>
+          <td data-label="Plattformhöhe">19.50m</td>
+          <td data-label="Eigengewicht">9800kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 280 und HL 330</td>
+          <td data-label="Arbeitshöhe">28.20m</td>
+          <td data-label="Tragkraft">750kg</td>
+          <td data-label="Plattformhöhe">26.20m</td>
+          <td data-label="Eigengewicht">18770kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='scherenbuhne/HL 280 und HL 330.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">HL 330 E14</td>
+          <td data-label="Arbeitshöhe">33.00m</td>
+          <td data-label="Tragkraft">600kg</td>
+          <td data-label="Plattformhöhe">31.00m</td>
+          <td data-label="Eigengewicht">23950kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
       </tbody>
     </table>
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-    <footer class="flex-col">
-      <div class="info-wrapper flex-row center bg-dark">
-        <div class="wrapper">
-          <div class="footer-info flex-row space-between-start">
-            <div class="info-container flex-row center">
-              <ul>
-                <li>
-                  <h4>Menu</h4>
-                </li>
-                <li>
-                  <a class="text-link" href="../atec/index.html"> Home</a>
-                </li>
-                <li>
-                  <a class="text-link" href="about.html"> Über uns</a>
-                </li>
-                <li>
-                  <a class="text-link" href="../atec/jobs.html"> Jobs</a>
-                </li>
-                <li>
-                  <a class="text-link" href="kontakt.html"> Kontakt</a>
-                </li>
-              </ul>
-            </div>
-            <div class="info-container flex-row center">
-              <div class="sponsorContainer">
-                <div class="sponsor1">
-                  <a href="https://www.ipaf.org/en"
-                    ><img src="images/training_ipaf2.png"
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="info-container flex-row center">
-              <ul>
-                <li>
-                  <h4>Contact</h4>
-                </li>
-                <li>Thurgauerstrasse 117, 8152 Glattpark(Opfikon)</li>
-                <li>061 922 08 01</li>
-                <li>info(an)atec-ab.ch</li>
-              </ul>
-            </div>
+    <div class="footer">
+      <div class="inner-footer">
+        <!--  for company name and description -->
+        <div class="footer-items">
+          <a class="footer-text-logo-link" href="#"
+            ><h1 class="footer-text-logo-h1">ATEC <br />Arbeitsbühnen AG</h1></a
+          >
+        </div>
+
+        <!--  for quick links  -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <a class="footer-link" href="../atec/index.html"
+              ><li class="footer-li">Home</li></a
+            >
+            <a class="footer-link" href="../atec/about.html"
+              ><li class="footer-li">Über uns</li></a
+            >
+            <a class="footer-link" href="../atec/jobs.html"
+              ><li class="footer-li">Jobs</li></a
+            >
+            <a class="footer-link" href="../atec/kontakt.html"
+              ><li class="footer-li">Kontakt</li></a
+            >
+          </ul>
+        </div>
+
+        <!--  for some other links -->
+        <div class="footer-items">
+          <a href="https://www.ipaf.org/en"
+            ><img
+              src="../atec/images/training_ipaf2.png"
+              height="150px"
+              width="150px"
+          /></a>
+        </div>
+
+        <!--  for contact us info -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa fa-map-marker" aria-hidden="true"></i
+              >Thurgauerstrasse 117
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >info(an)atec-ab.ch
+            </li>
+          </ul>
+
+          <!--   for social links -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/nsgroupag.sead"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="../atec/kontakt.html"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
-      <div class="social-links-container bg-light">
-        <div class="wrapper flex-col center">
-          <div class="social-links flex-row">
-            <div class="social-link">
-              <a href="#"> <i class="fab fa-facebook-f"></i></a>
-            </div>
-            <div class="social-link">
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="copyright-container">
-            <p>Copyright &copy; 2020. All rights reserved</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+
+      <!--   Footer Bottom start  -->
+      <div class="footer-bottom">Copyright &copy; Screnshoot 2020</div>
+    </div>
   </body>
 </html>

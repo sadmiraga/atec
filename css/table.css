@@ -134,3 +134,7 @@ button:active {
 .btn-slide-left:hover {
   background-position: left bottom;
 }
+
+.machineDescription {
+  color: white;
+}
