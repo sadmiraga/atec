@@ -29,6 +29,7 @@ Rijesiti mail problem na domeni
 -U svakom slucaju staviti stranicu live *
 *****************************************
 
-logo rijesit 
 promjenit adrese 
 i mailove 
+staviti stranicu live 
+
