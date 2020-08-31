@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 
 .button {
   display: inline-block;
@@ -14,13 +13,13 @@
   text-decoration: none;
 }
 .button-primary::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 4px;
   opacity: 0;
   -webkit-transform: scaleX(0.8);
@@ -36,17 +35,16 @@
   transform: scaleX(1);
 }
 .overlay::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 544px;
   left: 0px;
   right: 0px;
   top: 0;
-  
 }
 .navbar {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: black;
   position: absolute;
   left: 0;
   top: 0;
@@ -106,8 +104,8 @@
   font-size: 1.6rem;
 }
 
-
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
   color: orange;
 }
 
@@ -115,7 +113,7 @@
   position: fixed;
   -webkit-animation: navbar-animation 0.6s;
   animation: navbar-animation 0.6s;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .navbar.fixed-top.navbar-dark .navbar-nav .nav-link.active {
   color: white;
@@ -131,12 +129,10 @@
   }
   .navbar-nav {
     padding: 0 20px;
-    background-color: rgba(0, 0, 0, .9);
-   
+    background-color: rgba(0, 0, 0, 0.9);
   }
   .navbar.fixed-top .navbar-nav {
     background: transparent;
-    
   }
 }
 @media only screen and (min-width: 767px) {
@@ -144,7 +140,7 @@
     padding: 23px 15px;
   }
   .navbar-dark .navbar-nav .nav-link::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 15px;
     left: 30%;
@@ -156,13 +152,11 @@
     -ms-transform: scaleX(0);
     transform: scaleX(0);
     transition: transform 0.1s ease-in;
-    
   }
   .navbar-dark .navbar-nav .nav-link:hover::after {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
-    
   }
 }
 @-webkit-keyframes navbar-animation {
@@ -171,14 +165,12 @@
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);
-    
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
-    
   }
 }
 @keyframes navbar-animation {
@@ -195,4 +187,3 @@
     transform: translateY(0);
   }
 }
-

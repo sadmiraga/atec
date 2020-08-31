@@ -8,9 +8,12 @@ Rijesiti mail problem na domeni
 	1. Scherenbühne
 	2. LKW-Bühne und Selbstfahrer 3.5t
 	3. Teleskopbühnen
-	4. Raupenarbeitsbühnen
+
+4. Raupenarbeitsbühnen
+
 	5. Teleskopstapler
 	6. Personenlift
+
 	7. Elektrostapler
 	8. Elektro-Hochhubwagen
 	9. Elektro Geh-Hubwagen
@@ -25,3 +28,7 @@ Rijesiti mail problem na domeni
 *****************************************
 -U svakom slucaju staviti stranicu live *
 *****************************************
+
+logo rijesit 
+promjenit adrese 
+i mailove 
