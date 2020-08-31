@@ -1,0 +1,352 @@
+.outer-div-kompressor {
+  background-image: url("../images/productBackground/kompressor.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-kompressor {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-elektrostapler {
+  background-image: url("../images/productBackground/Elektrostapler.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-elektrostapler {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-elektrohochhubwagen {
+  width: auto;
+  background-image: url("../images/productBackground/gehubwagen.png");
+  background-image: url("../images/productBackground/elektrohochhubwagen.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-elektrohochhubwagen {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-elektrogehhubwagen {
+  width: auto;
+  background-image: url("../images/productBackground/gehubwagen.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-elektrogehhubwagen {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-personenlift {
+  width: auto;
+  background-image: url("../images/productBackground/personenlift.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-personenlift {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-raupenbuhne {
+  width: auto;
+  background-image: url("../images/productBackground/raupenbuhne.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-raupenbuhne {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-scherenbuhne {
+  width: auto;
+  background-image: url("../images/productBackground/scherenbuhne.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-scherenbuhne {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-selbstfahrer {
+  width: auto;
+  background-image: url("../images/productBackground/selbsfahrer.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-selbstfahrer {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-teleskopbuhne {
+  width: auto;
+  background-image: url("../images/productBackground/teleskopbuhne.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-teleskopbuhne {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.outer-div-teleskopstapler {
+  width: auto;
+  background-image: url("../images/productBackground/teleskostapler.png");
+  padding: 30px;
+  background-color: #f3f3f3;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.inner-div-teleskopstapler {
+  width: 40%;
+  max-width: 800px;
+  height: 100px;
+  margin-top: 80px;
+  word-wrap: break-word;
+  border-radius: 3px;
+}
+
+.textBx-scherenbuhne {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.scherenbuhne-h1 {
+  color: orange;
+}
+
+.textBx-teleskopstapler {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.teleskopstapler-h1 {
+  color: orange;
+}
+
+.textBx-teleskopbuhne {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.teleskopbuhne-h1 {
+  color: orange;
+}
+
+.textBx-selbstfahrer {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.selbstfahrer-h1 {
+  color: orange;
+}
+
+.textBx-raupenbuhne {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.raupenbuhne-h1 {
+  color: orange;
+}
+
+.textBx-personenlift {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.personenlift-h1 {
+  color: orange;
+}
+
+.textBx-kompressor {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.kompressor-h1 {
+  color: orange;
+}
+
+.textBx-elektrostapler {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+  text-align: justify;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.elektrostapler-h1 {
+  color: orange;
+}
+
+.textBx-elektrohochhubwagen {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+  text-align: justify;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+.elektrohochhubwagen-h1 {
+  color: orange;
+}
+
+.textBx-elektrogehhubwagen {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 99;
+  color: white;
+  text-align: justify;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  line-height: 1.5;
+}
+
+.elektrogehhubwagen-h1 {
+  color: orange;
+}

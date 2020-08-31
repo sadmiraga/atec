@@ -1,0 +1,440 @@
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+<!-- jQuery first then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+
+<html>
+  <head>
+    <!-- Fontawasome include -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="images/assets/hnet.com-image.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <title>ATEC Arbeitsbuhnen GmbH</title>
+
+    <link rel="stylesheet" href="css/indexIcons.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/slideshowReal.css" type="text/css" />
+    <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/parallax.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Navbar-->
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <a href="/index.html" class="navbar-brand"
+            ><img
+              src="images/logoTransparentv2.png"
+              height="50px"
+              width="50px"
+          /></a>
+          <p class="navbar-brand-text">ATEC Arbeitsbuhnen</p>
+          <button
+            type="button"
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          </button>
+
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-li">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+              </li>
+              <li class="navbar-li">
+                <a href="about.html" class="nav-item nav-link">
+                  Uber uns</a
+                >
+              </li>
+              <li class="navbar-li">
+                <a href="/jobs.html" class="nav-item nav-link">Jobs</a>
+              </li>
+              <li class="navbar-li">
+                <a href="/kontakt.html" class="nav-item nav-link"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <script>
+        jQuery(function ($) {
+          $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+              $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+              $(".navbar").removeClass("fixed-top");
+            }
+          });
+
+          function adjustNav() {
+            var winWidth = $(window).width(),
+              dropdown = $(".dropdown"),
+              dropdownMenu = $(".dropdown-menu");
+
+            if (winWidth >= 768) {
+              dropdown.on("mouseenter", function () {
+                $(this)
+                  .addClass("show")
+                  .children(dropdownMenu)
+                  .addClass("show");
+              });
+
+              dropdown.on("mouseleave", function () {
+                $(this)
+                  .removeClass("show")
+                  .children(dropdownMenu)
+                  .removeClass("show");
+              });
+            } else {
+              dropdown.off("mouseenter mouseleave");
+            }
+          }
+
+          $(window).on("resize", adjustNav);
+
+          adjustNav();
+        });
+      </script>
+    </header>
+
+    <!-- Slideshow-->
+    <div class="slideshow">
+      <h1 class="slideshow-h1">
+        <p class="slideshow-small">Herzlich Willkommen bei der</p>
+        ATEC
+        <p class="slideshow-small">Arbeitsbuhnen AG</p>
+      </h1>
+      <div
+        class="slideshow-image"
+        style="background-image: url('images/slideshow/slideshow1.jpg')"
+      ></div>
+      <div
+        class="slideshow-image"
+        style="background-image: url('images/slideshow/slideshow2.jpg')"
+      ></div>
+      <div
+        class="slideshow-image"
+        style="background-image: url('images/slideshow/slideshow3.jpg')"
+      ></div>
+      <div
+        class="slideshow-image"
+        style="background-image: url('images/slideshow/slideshow4.jpg')"
+      ></div>
+    </div>
+
+    <!-- Products-->
+    <div>
+      <div class="main2">
+        <br /><br />
+        <h1 class="index-h1">Miet Angebot</h1>
+        <ul class="cards">
+          <li class="cards_item" onclick="location.href='scherenbuhne.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/scherenbuhne.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    FUr Arbeiten in der Hohe, bei denen Sie viel Platz auf der
+                    Plattform benotigen, eignen sich unsere Scherenarbeitsbuhnen
+                    perfekt. Mieten Sie die passende Scherenarbeitsbühne fur
+                    Ihren Einsatz.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Scherenbuhne</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='selbstfahrer.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/selbsfahrer.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Mieten Sie unkompliziert Ihre LKW-Arbeitsbühne mit einer
+                    Arbeitshöhe von 20 bis 25 m bei uns. Ob für
+                    Baumpflegearbeiten, Glasreinigung oder andere Höhenaufgaben,
+                    finden Sie bei uns die richtige Bühne. Als Selbstfahrer
+                    lassen sich einige Arbeitsbühnen bereits mit einem
+                    Führerschein der Klasse B fahren.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">LKW-Buhne und Selbstfahrer 3.5t</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='teleskopbuhne.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/teleskopbuhne.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Eine grosse Auswahl an selbstfahrenden Teleskop- und
+                    Gelenk-Teleskop-Arbeitsbühnen haben wir für Sie im Angebot.
+                    Bis zu 28m Arbeitshöhe erreichen Sie mit dieser praktischen
+                    Alternative zur LKW-Arbeitsbühne. Diese Bühnen lassen sich
+                    in voller Höhe verfahren und sparen Ihnen damit wertvolle
+                    Zeit.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Teleskopbuhnen</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='personenlift.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img
+                  src="images/products/personenlift.png
+                "
+                />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Mit einer Vertikalmastbühne erledigen Sie Ihre Arbeiten in
+                    der Höhe mit links. Arbeiten Sie ungehindert an, über oder
+                    in der Umgebung von Montagestrassen, Regalen, Kanalsystemen
+                    oder Fächern. Die Vertikalmastbühnen verfügen über dicke,
+                    spurenfreie Gummireifen und einen sauberen effizienten
+                    Elektroantrieb.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Personenlift</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='raupenbuhne.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/raupenbuhne.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Raupen-Arbeitsbühnen erinnern nicht nur optisch an diese
+                    gelenkigen Tiere. Die Stützen gleichen Boden-Unebenheiten
+                    aus und lassen sich sogar am Hang oder an Treppen aufstellen
+                    und bieten Ihnen einen sicheren Stand.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Raupenarbeitsbuhnen</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='teleskopstapler.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/teleskostapler.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Teleskopstapler bieten mit hohen Tragkräften, variablen
+                    Reichweiten und einer Vielfalt von Anbaugeräten extrem
+                    vielseitige Einsatzmöglichkeiten. Ein Teleskopstapler eignet
+                    sich bestens dazu, Material aufzuschichten und zu
+                    transportieren.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Teleskopstapler</span>
+            </div>
+          </li>
+          <li
+            onclick="location.href='elektrogehhubwagen.html'"
+            class="cards_item"
+          >
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/Elektro Gehhubwagen.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Für das Umstellen von Waren oder Materialien bis zu 2,2t
+                    sind wir mit unseren elektrischen Geh-Hubwagen optimal
+                    gerüstet und können Sie Ihnen zu einem Top-Preis anbieten
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Elektro Geh-Hubwagen</span>
+            </div>
+          </li>
+
+          <li
+            class="cards_item"
+            onclick="location.href='elektrohochhubwagen.html'"
+          >
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/Elektro Hochhubwagen.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Die Elektro-Hochhubwagen eignen sich für die Logistik
+                    masslos und sind sehr einfach zu bedienen. Die Hubhöhe ist
+                    für den Einsatz in einem Vertrieb z.B, oder ein Lager sehr
+                    vorteilhaft.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Elektro-Hochhubwagen</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='elektrostapler.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/frontstapler.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Unsere Gabelstapler Vermietung von Hyster helfen Ihnen
+                    schwere Materialien und Werkzeuge mühelos von A nach B
+                    transportieren! Durch Ihren lautlosen Batterie-Antrieb
+                    arbeiten Sie ohne Abgase und sparen Kraftstoff. Die Stapler
+                    eignen sich gleichermassen für den Innen- und Ausseneinsatz
+                    und haben eine tragkraft bis zu 3500kg.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Elektrostapler</span>
+            </div>
+          </li>
+
+          <li class="cards_item" onclick="location.href='kompressor.html'">
+            <div class="card">
+              <div class="card_image">
+                <div class="content-overlay"></div>
+                <img src="images/products/kompressor.png" />
+                <div class="content-details fadeIn-bottom">
+                  <p class="content-text">
+                    Ob für Baustelle oder den Privatgebrauch, bieten wir Ihnen
+                    Kompressoren an, nach Wunsch oder Vorgaben.
+                  </p>
+                </div>
+              </div>
+              <span class="machineName">Kompressoren</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.3721816089765!2d8.555871750469977!3d47.4241857084535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa075504bf00d%3A0xf5ee3ad0304d01b8!2sThurgauerstrasse%20117%2C%208152%20Opfikon%2C%20%C5%A0vicarska!5e0!3m2!1sbs!2ssi!4v1597548897181!5m2!1sbs!2ssi"
+      width="100%"
+      height="450"
+      frameborder="0"
+      style="border: 0"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0"
+    ></iframe>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="inner-footer">
+        <!--  for company name and description -->
+        <div class="footer-items">
+          <a class="footer-text-logo-link" href="index.html"
+            ><h1 class="footer-text-logo-h1">
+              ATEC <br />
+              Arbeitsbuhnen GmbH
+            </h1></a
+          >
+        </div>
+
+        <!--  for quick links  -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <a class="footer-link" href="index.html"
+              ><li class="footer-li">Home</li></a
+            >
+            <a class="footer-link" href="about.html"
+              ><li class="footer-li">Uber uns</li></a
+            >
+            <a class="footer-link" href="jobs.html"
+              ><li class="footer-li">Jobs</li></a
+            >
+            <a class="footer-link" href="kontakt.html"
+              ><li class="footer-li">Kontakt</li></a
+            >
+          </ul>
+        </div>
+
+        <!--  for some other links -->
+        <div class="footer-items">
+          <a href="https://www.ipaf.org/en"
+            ><img
+              src="images/training_ipaf2.png"
+              height="150px"
+              width="150px"
+          /></a>
+        </div>
+
+        <!--  for contact us info -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa fa-map-marker" aria-hidden="true"></i
+              >Thurgauerstrasse 117
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >info(an)atec-ab.ch
+            </li>
+          </ul>
+
+          <!--   for social links -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/nsgroupag.sead"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="kontakt.html"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!--   Footer Bottom start  -->
+      <div class="footer-bottom">Copyright &copy; Screnshoot 2020</div>
+    </div>
+  </body>
+</html>

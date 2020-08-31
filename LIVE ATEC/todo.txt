@@ -1,0 +1,35 @@
+Cpanel
+======
+Rijesiti mail problem na domeni
+======
+
+-Tebale zavrsiti
+-Redoslijed produkata:
+	1. Scherenbühne
+	2. LKW-Bühne und Selbstfahrer 3.5t
+	3. Teleskopbühnen
+
+4. Raupenarbeitsbühnen
+
+	5. Teleskopstapler
+	6. Personenlift
+
+	7. Elektrostapler
+	8. Elektro-Hochhubwagen
+	9. Elektro Geh-Hubwagen
+	10. Kompressoren
+
+-Pregledati svaku stranicu da li je font odgovarajuci
+-Ubaciti logo na index page(Onaj mali gore na tabu)
+-Dodati liniju kao sa Uber uns na jobs
+-Rijesiti spori load index page-a
+
+
+*****************************************
+-U svakom slucaju staviti stranicu live *
+*****************************************
+
+promjenit adrese 
+i mailove 
+staviti stranicu live 
+

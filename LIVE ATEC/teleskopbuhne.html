@@ -1,0 +1,425 @@
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+
+<link rel="stylesheet" href="style.css" />
+<!-- jQuery first then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+
+<html>
+  <head>
+    <link
+      rel="icon"
+      href="images/assets/hnet.com-image.ico"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <title>ATEC Arbeitsbühnen GmbH</title>
+
+    <!-- icons source-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/table.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="css/machine.css" type="text/css" />
+    <link rel="stylesheet" href="css/about.css" type="text/css" />
+  </head>
+
+  <body>
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"
+            ><img
+              src="images/logoTransparentv2.png"
+              height="50px"
+              width="50px"
+          /></a>
+          <p class="navbar-brand-text">ATEC Arbeitsbühnen</p>
+          <button
+            type="button"
+            class="navbar-toggler collapsed"
+            data-toggle="collapse"
+            data-target="#main-nav"
+          >
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          </button>
+
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-li">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+              </li>
+              <li class="navbar-li">
+                <a href="about.html" class="nav-item nav-link">
+                  Über uns</a
+                >
+              </li>
+              <li class="navbar-li">
+                <a href="jobs.html" class="nav-item nav-link">Jobs</a>
+              </li>
+              <li class="navbar-li">
+                <a href="kontakt.html" class="nav-item nav-link"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <script>
+        jQuery(function ($) {
+          $(window).on("scroll", function () {
+            if ($(this).scrollTop() >= 200) {
+              $(".navbar").addClass("fixed-top");
+            } else if ($(this).scrollTop() == 0) {
+              $(".navbar").removeClass("fixed-top");
+            }
+          });
+
+          function adjustNav() {
+            var winWidth = $(window).width(),
+              dropdown = $(".dropdown"),
+              dropdownMenu = $(".dropdown-menu");
+
+            if (winWidth >= 768) {
+              dropdown.on("mouseenter", function () {
+                $(this)
+                  .addClass("show")
+                  .children(dropdownMenu)
+                  .addClass("show");
+              });
+
+              dropdown.on("mouseleave", function () {
+                $(this)
+                  .removeClass("show")
+                  .children(dropdownMenu)
+                  .removeClass("show");
+              });
+            } else {
+              dropdown.off("mouseenter mouseleave");
+            }
+          }
+
+          $(window).on("resize", adjustNav);
+
+          adjustNav();
+        });
+      </script>
+    </header>
+
+    <div class="outer-div-teleskopbuhne">
+      <div class="inner-div-teleskopbuhne">
+        <br />
+        <div class="textBx-teleskopbuhne">
+          <h1 class="teleskopbuhne-h1">Teleskopbühnen</h1>
+          <p class="teleskopbuhne-p">
+            Eine grosse Auswahl an selbstfahrenden Teleskop- und
+            Gelenk-Teleskop<br />-Arbeitsbühnen haben wir für Sie im Angebot.
+            Bis zu 28m Arbeitshöhe <br />erreichen Sie mit dieser praktischen
+            Alternative zur LKW-Arbeitsbühne. <br />Diese Bühnen lassen sich in
+            voller Höhe verfahren und sparen Ihnen damit wertvolle Zeit.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- table content -->
+
+    <table class="machineTable">
+      <thead>
+        <tr>
+          <th scope="col">Model</th>
+          <th scope="col">Arbeitshöhe</th>
+          <th scope="col">Tragkraft</th>
+          <th scope="col">Plattformhöhe</th>
+          <th scope="col">Eigengewicht</th>
+          <th scope="col">PDF</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="machineName" data-label="Model">E300AJP</td>
+          <td data-label="Arbeitshöhe">10.97m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">6.12m</td>
+          <td data-label="Eigengewicht">7100kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/E300AJP.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">340AJ (D)</td>
+          <td data-label="Arbeitshöhe">12.33m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">6.71m</td>
+          <td data-label="Eigengewicht">4450kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/340AJ_kl.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">H340AJ</td>
+          <td data-label="Arbeitshöhe">12.12m</td>
+          <td data-label="Tragkraft">227kg</td>
+          <td data-label="Plattformhöhe">6.06m</td>
+          <td data-label="Eigengewicht">4500kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/H340AJ-EN.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">E400AJPn</td>
+          <td data-label="Arbeitshöhe">14.19m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">6.83m</td>
+          <td data-label="Eigengewicht">6850kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/E400AJPn.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">E450AJ</td>
+          <td data-label="Arbeitshöhe">15.72m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">7.89m</td>
+          <td data-label="Eigengewicht">6670kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/E_450AJ.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">510AJ (D)</td>
+          <td data-label="Arbeitshöhe">17.81m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">9.48m</td>
+          <td data-label="Eigengewicht">6670kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/510AJ.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">E600JP</td>
+          <td data-label="Arbeitshöhe">20.39m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">14.19m</td>
+          <td data-label="Eigengewicht">7815kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/E_600JP.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">600AJ (D)</td>
+          <td data-label="Arbeitshöhe">20.46m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">12.75m</td>
+          <td data-label="Eigengewicht">10660kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/600AJ.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">740AJ (D)</td>
+          <td data-label="Arbeitshöhe">24.55m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">15.80m</td>
+          <td data-label="Eigengewicht">16420kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/740AJ.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">800AJ (D)</td>
+          <td data-label="Arbeitshöhe">26.46m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">15.74m</td>
+          <td data-label="Eigengewicht">15600kg</td>
+          <td data-label="Zur detailseite"></td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">860SJ (D)</td>
+          <td data-label="Arbeitshöhe">28.21m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">23.51m</td>
+          <td data-label="Eigengewicht">17200kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/860SJ_kl.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="machineName" data-label="Model">1250AJP (D)</td>
+          <td data-label="Arbeitshöhe">40.30m</td>
+          <td data-label="Tragkraft">230kg</td>
+          <td data-label="Plattformhöhe">29.25m</td>
+          <td data-label="Eigengewicht">21000kg</td>
+          <td data-label="Zur detailseite">
+            <button
+              onclick="location.href='teleskopbuhne/1250AJP.pdf'"
+              class="btn btn-slide-left"
+            >
+              Zur detailseite
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="footer">
+      <div class="inner-footer">
+        <!--  for company name and description -->
+        <div class="footer-items">
+          <a class="footer-text-logo-link" href="#"
+            ><h1 class="footer-text-logo-h1">ATEC <br />Arbeitsbühnen AG</h1></a
+          >
+        </div>
+
+        <!--  for quick links  -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <a class="footer-link" href="index.html"
+              ><li class="footer-li">Home</li></a
+            >
+            <a class="footer-link" href="about.html"
+              ><li class="footer-li">Über uns</li></a
+            >
+            <a class="footer-link" href="jobs.html"
+              ><li class="footer-li">Jobs</li></a
+            >
+            <a class="footer-link" href="kontakt.html"
+              ><li class="footer-li">Kontakt</li></a
+            >
+          </ul>
+        </div>
+
+        <!--  for some other links -->
+        <div class="footer-items">
+          <a href="https://www.ipaf.org/en"
+            ><img
+              src="images/training_ipaf2.png"
+              height="150px"
+              width="150px"
+          /></a>
+        </div>
+
+        <!--  for contact us info -->
+        <div class="footer-items">
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <i class="fa fa-map-marker" aria-hidden="true"></i
+              >Thurgauerstrasse 117
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-phone" aria-hidden="true"></i>043 355 10 90
+            </li>
+            <li class="footer-li">
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >info(an)atec-ab.ch
+            </li>
+          </ul>
+
+          <!--   for social links -->
+          <div class="social-media">
+            <a href="https://www.facebook.com/nsgroupag.sead"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://ch.linkedin.com/public-profile/in/nedim-nedzibi-05522b174?challengeId=AQHVsMNgTzP4bwAAAXQH9F3IDQGiQKcgfIAdv2CsBfXTMuBxdBfwYVOTveozdirt-4S-36j5T7_syIE-xfm4S7ublEE4pScdDQ&submissionId=6cc4d56e-60be-2c16-749d-6702cef2be31"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="kontakt.html"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!--   Footer Bottom start  -->
+      <div class="footer-bottom">Copyright &copy; Screnshoot 2020</div>
+    </div>
+  </body>
+</html>
