@@ -1,11 +1,12 @@
-.mail {
-  color: orange;
-}
-
-.mail:hover {
-  text-decoration: underline;
-}
-
-body {
-  height: 100%;
-}
+.mail {
+  color: orange;
+}
+
+.mail:hover {
+  text-decoration: underline;
+}
+
+body {
+  bottom: 0;
+  height: 100%;
+}
